@@ -1,2 +1,2 @@
 This is the beginning of my story.
-It was a dark and stormy night.
+Suddenly, a shot rang out!
