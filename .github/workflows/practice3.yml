@@ -23,6 +23,9 @@ jobs:
           sed 's/=.*/=***/' .env > verification/.env
       - name: Start application
         run: docker compose up -d --build --wait
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - name: Test application and database
         run: |
           python3 scripts/check.py
