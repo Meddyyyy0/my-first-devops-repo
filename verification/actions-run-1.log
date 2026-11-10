@@ -1,0 +1,908 @@
+migrate	Set up job	﻿2026-11-10T20:18:26.1331520Z Current runner version: '2.338.2'
+migrate	Set up job	2026-11-10T20:18:26.1336170Z Runner name: 'shvedov-devops-temporary'
+migrate	Set up job	2026-11-10T20:18:26.1336590Z Runner group name: 'Default'
+migrate	Set up job	2026-11-10T20:18:26.1337100Z Machine name: 'MacBook-Air-Andrej'
+migrate	Set up job	2026-11-10T20:18:26.1339880Z ##[group]GITHUB_TOKEN Permissions
+migrate	Set up job	2026-11-10T20:18:26.1341210Z Contents: read
+migrate	Set up job	2026-11-10T20:18:26.1341580Z Metadata: read
+migrate	Set up job	2026-11-10T20:18:26.1341890Z ##[endgroup]
+migrate	Set up job	2026-11-10T20:18:26.1343280Z Secret source: Actions
+migrate	Set up job	2026-11-10T20:18:26.1343820Z Cache mode: write
+migrate	Set up job	2026-11-10T20:18:26.1344230Z Prepare workflow directory
+migrate	Set up job	2026-11-10T20:18:26.1842850Z Prepare all required actions
+migrate	Set up job	2026-11-10T20:18:26.1870970Z Getting action download info
+migrate	Set up job	2026-11-10T20:18:26.8195460Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+migrate	Set up job	2026-11-10T20:18:27.4980310Z Complete job name: migrate
+migrate	Run actions/checkout@v4	﻿2026-11-10T20:18:27.5392450Z ##[group]Run actions/checkout@v4
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5392950Z with:
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5393290Z   repository: Meddyyyy0/my-first-devops-repo
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5395950Z   token: ***
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5396260Z   ssh-strict: true
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5396570Z   ssh-user: git
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5396880Z   persist-credentials: true
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5397210Z   clean: true
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5397520Z   sparse-checkout-cone-mode: true
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5397870Z   fetch-depth: 1
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5398160Z   fetch-tags: false
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5398460Z   show-progress: true
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5398780Z   lfs: false
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5399070Z   submodules: false
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5399380Z   set-safe-directory: true
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5399700Z   allow-unsafe-pr-checkout: false
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5400130Z env:
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5400500Z   DB_MYSQL_ROOT_PASSWORD: ***
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5400890Z   DB_MYSQL_PASSWORD: ***
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5401270Z   DB_POSTGRES_PASSWORD: ***
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5402180Z   STATE_DIR: /Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/my-first-devops-repo/my-first-devops-repo/../.shvedov-mattermost-state
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.5403090Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8060340Z Syncing repository: Meddyyyy0/my-first-devops-repo
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8061840Z ##[group]Getting Git version info
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8063450Z Working directory is '/Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/my-first-devops-repo/my-first-devops-repo'
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8065410Z [command]/usr/bin/git version
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8261770Z git version 2.50.1 (Apple Git-155)
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8270430Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8275880Z Copying '/Users/meddyyyy/.gitconfig' to '/Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/_temp/79655fd8-5c99-467f-ae3c-d561a25df4fa/.gitconfig'
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8279780Z Temporarily overriding HOME='/Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/_temp/79655fd8-5c99-467f-ae3c-d561a25df4fa' before making global git config changes
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8282870Z Adding repository directory to the temporary git global config as a safe directory
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8285760Z [command]/usr/bin/git config --global --add safe.directory /Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/my-first-devops-repo/my-first-devops-repo
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8434780Z [command]/usr/bin/git config --local --get remote.origin.url
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8564880Z https://github.com/Meddyyyy0/my-first-devops-repo
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8574160Z ##[group]Removing previously created refs, to avoid conflicts
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8576410Z [command]/usr/bin/git rev-parse --symbolic-full-name --verify --quiet HEAD
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8706760Z refs/heads/migration
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8712270Z [command]/usr/bin/git checkout --detach
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.8919990Z HEAD is now at fb87116 Add practice 2 and native ARM migration tools
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.9051300Z [command]/usr/bin/git branch --delete --force migration
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.9173930Z Deleted branch migration (was fb87116).
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.9298910Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.9299610Z [command]/usr/bin/git submodule status
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.9956390Z ##[group]Cleaning the repository
+migrate	Run actions/checkout@v4	2026-11-10T20:18:27.9957260Z [command]/usr/bin/git clean -ffdx
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.0090310Z Removing backups/
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.0095800Z [command]/usr/bin/git reset --hard HEAD
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.0270690Z HEAD is now at fb87116 Add practice 2 and native ARM migration tools
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.0273390Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.0274390Z ##[group]Disabling automatic garbage collection
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.0276340Z [command]/usr/bin/git config --local gc.auto 0
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.0408560Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.0409540Z ##[group]Setting up auth
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.0411740Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.0549450Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.1327500Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.1456860Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.2156040Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.2274020Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.2934230Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.3072280Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.3073350Z ##[group]Fetching the repository
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.3076750Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5f66941808bd13684e743791f367c3337a13b45a:refs/remotes/origin/migration
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.8999120Z From https://github.com/Meddyyyy0/my-first-devops-repo
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9000330Z  + fb87116...5f66941 5f66941808bd13684e743791f367c3337a13b45a -> origin/migration  (forced update)
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9064550Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9065040Z ##[group]Determining the checkout info
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9065460Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9069030Z [command]/usr/bin/git sparse-checkout disable
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9243720Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9381170Z ##[group]Checking out the ref
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9383450Z [command]/usr/bin/git checkout --progress --force -B migration refs/remotes/origin/migration
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9534690Z Warning: you are leaving 1 commit behind, not connected to
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9535170Z any of your branches:
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9535300Z 
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9535460Z   fb87116 Add practice 2 and native ARM migration tools
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9535660Z 
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9535830Z If you want to keep it by creating a new branch, this may be a good time
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9536150Z to do so with:
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9536250Z 
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9536380Z  git branch <new-branch-name> fb87116
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9536540Z 
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9554840Z Switched to a new branch 'migration'
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9560360Z branch 'migration' set up to track 'origin/migration'.
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9564550Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9700400Z [command]/usr/bin/git log -1 --format=%H
+migrate	Run actions/checkout@v4	2026-11-10T20:18:28.9828340Z 5f66941808bd13684e743791f367c3337a13b45a
+migrate	Build official Mattermost migration tools	﻿2026-11-10T20:18:28.9968290Z ##[group]Run docker build --platform linux/amd64 -t shvedov-migration-tools:1.0 tools/migration
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:28.9968760Z ^[[36;1mdocker build --platform linux/amd64 -t shvedov-migration-tools:1.0 tools/migration^[[0m
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:28.9980340Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:28.9980550Z env:
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:28.9980880Z   DB_MYSQL_ROOT_PASSWORD: ***
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:28.9981100Z   DB_MYSQL_PASSWORD: ***
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:28.9981310Z   DB_POSTGRES_PASSWORD: ***
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:28.9981840Z   STATE_DIR: /Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/my-first-devops-repo/my-first-devops-repo/../.shvedov-mattermost-state
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:28.9982390Z ##[endgroup]
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:29.1232490Z DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:29.1233040Z             Install the buildx component to build images with BuildKit:
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:29.1233400Z             https://docs.docker.com/go/buildx/
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:29.1233630Z 
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:29.1246730Z Sending build context to Docker daemon  2.048kB
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:29.1246990Z 
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:29.1255910Z Step 1/3 : ARG PGLOADER_BASE=mattermost/mattermost-pgloader:latest
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:29.1256260Z Step 2/3 : FROM ${PGLOADER_BASE}
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:29.1315320Z  ---> 6d513290a8e3
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:29.1315890Z Step 3/3 : RUN go install github.com/mattermost/migration-assist/cmd/migration-assist@v0.0.2 && cp /go/bin/migration-assist /usr/local/bin/migration-assist
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:29.1542740Z  ---> [Warning] The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:29.1543400Z  ---> Running in 6781160c6654
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:29.7070940Z ^[[91mgo: downloading github.com/mattermost/migration-assist v0.0.2
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:30.3851570Z ^[[0m^[[91mgo: downloading github.com/spf13/cobra v1.8.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:30.3852050Z go: downloading github.com/lib/pq v1.10.9
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:30.3852490Z go: downloading github.com/go-sql-driver/mysql v1.8.1
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:30.3971510Z ^[[0m^[[91mgo: downloading github.com/blang/semver/v4 v4.0.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:30.6543110Z ^[[0m^[[91mgo: downloading github.com/testcontainers/testcontainers-go v0.31.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:30.7847720Z ^[[0m^[[91mgo: downloading github.com/testcontainers/testcontainers-go/modules/mysql v0.31.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:30.8381080Z ^[[0m^[[91mgo: downloading filippo.io/edwards25519 v1.1.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:30.8555510Z ^[[0m^[[91mgo: downloading github.com/mattermost/morph v1.1.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:31.4162310Z ^[[0m^[[91mgo: downloading github.com/spf13/pflag v1.0.5
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:31.5383870Z ^[[0m^[[91mgo: downloading github.com/fatih/color v1.10.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:31.5384260Z ^[[0m^[[91mgo: downloading github.com/stretchr/testify v1.9.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:31.5414660Z ^[[0m^[[91mgo: downloading github.com/pkg/errors v0.9.1
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:31.8032800Z ^[[0m^[[91mgo: downloading dario.cat/mergo v1.0.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:31.8034140Z ^[[0m^[[91mgo: downloading github.com/cenkalti/backoff/v4 v4.2.1
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:31.8403670Z ^[[0m^[[91mgo: downloading github.com/containerd/containerd v1.7.15
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:31.8533400Z ^[[0m^[[91mgo: downloading github.com/cpuguy83/dockercfg v0.3.1
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:32.0768320Z ^[[0m^[[91mgo: downloading github.com/docker/docker v25.0.5+incompatible
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:32.9032890Z ^[[0m^[[91mgo: downloading github.com/docker/go-connections v0.5.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:32.9033290Z go: downloading github.com/moby/patternmatcher v0.6.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:32.9033580Z go: downloading github.com/moby/term v0.5.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:32.9033860Z go: downloading github.com/google/uuid v1.6.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:33.1008250Z ^[[0m^[[91mgo: downloading github.com/opencontainers/image-spec v1.1.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:33.1468180Z ^[[0m^[[91mgo: downloading golang.org/x/crypto v0.22.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:33.1593790Z ^[[0m^[[91mgo: downloading modernc.org/sqlite v1.18.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:33.1679210Z ^[[0m^[[91mgo: downloading github.com/mattn/go-colorable v0.1.8
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:33.4188650Z ^[[0m^[[91mgo: downloading github.com/mattn/go-isatty v0.0.12
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:33.5219090Z ^[[0m^[[91mgo: downloading golang.org/x/sys v0.19.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:33.6552070Z ^[[0m^[[91mgo: downloading github.com/docker/go-units v0.5.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:33.6553340Z ^[[0m^[[91mgo: downloading github.com/containerd/log v0.1.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:33.9285850Z ^[[0m^[[91mgo: downloading github.com/klauspost/compress v1.16.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:33.9286780Z go: downloading github.com/moby/sys/sequential v0.5.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:34.0589710Z ^[[0m^[[91mgo: downloading github.com/morikuni/aec v1.0.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:34.1700530Z ^[[0m^[[91mgo: downloading github.com/distribution/reference v0.5.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:34.2511150Z ^[[0m^[[91mgo: downloading github.com/opencontainers/go-digest v1.0.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:34.4532940Z ^[[0m^[[91mgo: downloading go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.49.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:34.5854600Z ^[[0m^[[91mgo: downloading go.opentelemetry.io/otel/trace v1.24.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:34.7263360Z ^[[0m^[[91mgo: downloading github.com/magiconair/properties v1.8.7
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:34.7536580Z ^[[0m^[[91mgo: downloading go.opentelemetry.io/otel v1.24.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:35.0653660Z ^[[0m^[[91mgo: downloading github.com/shirou/gopsutil/v3 v3.23.12
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:35.3180060Z ^[[0m^[[91mgo: downloading github.com/davecgh/go-spew v1.1.1
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:35.5143580Z ^[[0m^[[91mgo: downloading github.com/pmezard/go-difflib v1.0.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:35.7551360Z ^[[0m^[[91mgo: downloading gopkg.in/yaml.v3 v3.0.1
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:35.9877660Z ^[[0m^[[91mgo: downloading google.golang.org/grpc v1.58.3
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:37.1887630Z ^[[0m^[[91mgo: downloading github.com/sirupsen/logrus v1.9.3
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:37.4389610Z ^[[0m^[[91mgo: downloading github.com/moby/sys/user v0.1.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:37.6990320Z ^[[0m^[[91mgo: downloading github.com/felixge/httpsnoop v1.0.4
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:37.9657390Z ^[[0m^[[91mgo: downloading go.opentelemetry.io/otel/metric v1.24.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:38.1244890Z ^[[0m^[[91mgo: downloading github.com/tklauser/go-sysconf v0.3.12
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:38.1248870Z ^[[0m^[[91mgo: downloading github.com/gogo/protobuf v1.3.2
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:38.2364820Z ^[[0m^[[91mgo: downloading github.com/go-logr/logr v1.4.1
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:38.3331980Z ^[[0m^[[91mgo: downloading google.golang.org/genproto/googleapis/rpc v0.0.0-20230731190214-cbb8c96f2d6d
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:38.4585120Z ^[[0m^[[91mgo: downloading github.com/tklauser/numcpus v0.6.1
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:38.6070200Z ^[[0m^[[91mgo: downloading github.com/go-logr/stdr v1.2.2
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:38.6548090Z ^[[0m^[[91mgo: downloading github.com/golang/protobuf v1.5.4
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:38.8376110Z ^[[0m^[[91mgo: downloading google.golang.org/protobuf v1.33.0
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:42.0738070Z ^[[0m^[[91mgo: downloading modernc.org/libc v1.16.7
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:43.1768930Z ^[[0m^[[91mgo: downloading modernc.org/mathutil v1.4.1
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:43.1769580Z ^[[0m^[[91mgo: downloading modernc.org/memory v1.1.1
+migrate	Build official Mattermost migration tools	2026-11-10T20:18:43.5026860Z ^[[0m^[[91mgo: downloading github.com/remyoudompheng/bigfft v0.0.0-20200410134404-eec4a21b6bb0
+migrate	Build official Mattermost migration tools	2026-11-10T20:20:07.8613860Z ^[[0m ---> Removed intermediate container 6781160c6654
+migrate	Build official Mattermost migration tools	2026-11-10T20:20:07.8614440Z  ---> a3319c202de4
+migrate	Build official Mattermost migration tools	2026-11-10T20:20:07.8615540Z Successfully built a3319c202de4
+migrate	Build official Mattermost migration tools	2026-11-10T20:20:07.8652650Z Successfully tagged shvedov-migration-tools:1.0
+migrate	Migrate and verify	﻿2026-11-10T20:20:07.8752640Z ##[group]Run bash scripts/migrate.sh
+migrate	Migrate and verify	2026-11-10T20:20:07.8752890Z ^[[36;1mbash scripts/migrate.sh^[[0m
+migrate	Migrate and verify	2026-11-10T20:20:07.9008540Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+migrate	Migrate and verify	2026-11-10T20:20:07.9008780Z env:
+migrate	Migrate and verify	2026-11-10T20:20:07.9009810Z   DB_MYSQL_ROOT_PASSWORD: ***
+migrate	Migrate and verify	2026-11-10T20:20:07.9010020Z   DB_MYSQL_PASSWORD: ***
+migrate	Migrate and verify	2026-11-10T20:20:07.9010200Z   DB_POSTGRES_PASSWORD: ***
+migrate	Migrate and verify	2026-11-10T20:20:07.9010740Z   STATE_DIR: /Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/my-first-devops-repo/my-first-devops-repo/../.shvedov-mattermost-state
+migrate	Migrate and verify	2026-11-10T20:20:07.9011300Z ##[endgroup]
+migrate	Migrate and verify	2026-11-10T20:20:08.0924040Z time="2026-11-10T23:20:08+03:00" level=warning msg="Found orphan containers (shvedov-mm-postgres-1) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up."
+migrate	Migrate and verify	2026-11-10T20:20:08.0927600Z  Container shvedov-mm-mysql-1 Running 
+migrate	Migrate and verify	2026-11-10T20:20:08.0970900Z  Container shvedov-mm-mysql-1 Waiting 
+migrate	Migrate and verify	2026-11-10T20:20:08.6051920Z  Container shvedov-mm-mysql-1 Healthy 
+migrate	Migrate and verify	2026-11-10T20:20:08.6819530Z  Container shvedov-mm-mattermost-1 Stopping 
+migrate	Migrate and verify	2026-11-10T20:20:08.6824560Z  Container shvedov-mm-mattermost-1 Stopped 
+migrate	Migrate and verify	2026-11-10T20:20:09.0627250Z time="2026-11-10T23:20:09+03:00" level=warning msg="Found orphan containers (shvedov-mm-mysql-1) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up."
+migrate	Migrate and verify	2026-11-10T20:20:09.0628040Z  Container shvedov-mm-postgres-1 Running 
+migrate	Migrate and verify	2026-11-10T20:20:09.0696290Z  Container shvedov-mm-postgres-1 Waiting 
+migrate	Migrate and verify	2026-11-10T20:20:09.5727350Z  Container shvedov-mm-postgres-1 Healthy 
+migrate	Migrate and verify	2026-11-10T20:20:09.6573610Z NOTICE:  drop cascades to 72 other objects
+migrate	Migrate and verify	2026-11-10T20:20:09.6573990Z DETAIL:  drop cascades to table db_lock
+migrate	Migrate and verify	2026-11-10T20:20:09.6574300Z drop cascades to table db_migrations
+migrate	Migrate and verify	2026-11-10T20:20:09.6574540Z drop cascades to table teams
+migrate	Migrate and verify	2026-11-10T20:20:09.6574810Z drop cascades to table teammembers
+migrate	Migrate and verify	2026-11-10T20:20:09.6575030Z drop cascades to table clusterdiscovery
+migrate	Migrate and verify	2026-11-10T20:20:09.6575440Z drop cascades to table commandwebhooks
+migrate	Migrate and verify	2026-11-10T20:20:09.6575670Z drop cascades to table compliances
+migrate	Migrate and verify	2026-11-10T20:20:09.6575890Z drop cascades to table emoji
+migrate	Migrate and verify	2026-11-10T20:20:09.6576100Z drop cascades to table usergroups
+migrate	Migrate and verify	2026-11-10T20:20:09.6576350Z drop cascades to table groupmembers
+migrate	Migrate and verify	2026-11-10T20:20:09.6576630Z drop cascades to table groupteams
+migrate	Migrate and verify	2026-11-10T20:20:09.6576850Z drop cascades to table groupchannels
+migrate	Migrate and verify	2026-11-10T20:20:09.6577090Z drop cascades to table linkmetadata
+migrate	Migrate and verify	2026-11-10T20:20:09.6577320Z drop cascades to table commands
+migrate	Migrate and verify	2026-11-10T20:20:09.6577530Z drop cascades to table incomingwebhooks
+migrate	Migrate and verify	2026-11-10T20:20:09.6577790Z drop cascades to table outgoingwebhooks
+migrate	Migrate and verify	2026-11-10T20:20:09.6578000Z drop cascades to table systems
+migrate	Migrate and verify	2026-11-10T20:20:09.6578240Z drop cascades to table reactions
+migrate	Migrate and verify	2026-11-10T20:20:09.6578450Z drop cascades to table roles
+migrate	Migrate and verify	2026-11-10T20:20:09.6578630Z drop cascades to table schemes
+migrate	Migrate and verify	2026-11-10T20:20:09.6578890Z drop cascades to table licenses
+migrate	Migrate and verify	2026-11-10T20:20:09.6579120Z drop cascades to table posts
+migrate	Migrate and verify	2026-11-10T20:20:09.6579350Z drop cascades to table productnoticeviewstate
+migrate	Migrate and verify	2026-11-10T20:20:09.6579640Z drop cascades to table sessions
+migrate	Migrate and verify	2026-11-10T20:20:09.6579890Z drop cascades to table termsofservice
+migrate	Migrate and verify	2026-11-10T20:20:09.6580090Z drop cascades to table audits
+migrate	Migrate and verify	2026-11-10T20:20:09.6580310Z drop cascades to table oauthaccessdata
+migrate	Migrate and verify	2026-11-10T20:20:09.6580530Z drop cascades to table preferences
+migrate	Migrate and verify	2026-11-10T20:20:09.6580840Z drop cascades to table status
+migrate	Migrate and verify	2026-11-10T20:20:09.6581060Z drop cascades to table tokens
+migrate	Migrate and verify	2026-11-10T20:20:09.6581500Z drop cascades to table bots
+migrate	Migrate and verify	2026-11-10T20:20:09.6581820Z drop cascades to table useraccesstokens
+migrate	Migrate and verify	2026-11-10T20:20:09.6582150Z drop cascades to table remoteclusters
+migrate	Migrate and verify	2026-11-10T20:20:09.6582400Z drop cascades to table sharedchannels
+migrate	Migrate and verify	2026-11-10T20:20:09.6582630Z drop cascades to table sidebarchannels
+migrate	Migrate and verify	2026-11-10T20:20:09.6583640Z drop cascades to table oauthauthdata
+migrate	Migrate and verify	2026-11-10T20:20:09.6583870Z drop cascades to table sharedchannelattachments
+migrate	Migrate and verify	2026-11-10T20:20:09.6584170Z drop cascades to table sharedchannelusers
+migrate	Migrate and verify	2026-11-10T20:20:09.6584450Z drop cascades to table sharedchannelremotes
+migrate	Migrate and verify	2026-11-10T20:20:09.6584680Z drop cascades to table jobs
+migrate	Migrate and verify	2026-11-10T20:20:09.6584900Z drop cascades to table channelmemberhistory
+migrate	Migrate and verify	2026-11-10T20:20:09.6585200Z drop cascades to table sidebarcategories
+migrate	Migrate and verify	2026-11-10T20:20:09.6585420Z drop cascades to table uploadsessions
+migrate	Migrate and verify	2026-11-10T20:20:09.6585640Z drop cascades to table threads
+migrate	Migrate and verify	2026-11-10T20:20:09.6585860Z drop cascades to table threadmemberships
+migrate	Migrate and verify	2026-11-10T20:20:09.6586080Z drop cascades to table usertermsofservice
+migrate	Migrate and verify	2026-11-10T20:20:09.6586450Z drop cascades to table pluginkeyvaluestore
+migrate	Migrate and verify	2026-11-10T20:20:09.6586900Z drop cascades to table users
+migrate	Migrate and verify	2026-11-10T20:20:09.6587110Z drop cascades to table fileinfo
+migrate	Migrate and verify	2026-11-10T20:20:09.6587330Z drop cascades to table oauthapps
+migrate	Migrate and verify	2026-11-10T20:20:09.6587520Z drop cascades to table channels
+migrate	Migrate and verify	2026-11-10T20:20:09.6587790Z drop cascades to table channelmembers
+migrate	Migrate and verify	2026-11-10T20:20:09.6588050Z drop cascades to table publicchannels
+migrate	Migrate and verify	2026-11-10T20:20:09.6588270Z drop cascades to table retentionpolicies
+migrate	Migrate and verify	2026-11-10T20:20:09.6588540Z drop cascades to table retentionpoliciesteams
+migrate	Migrate and verify	2026-11-10T20:20:09.6588850Z drop cascades to table retentionpolicieschannels
+migrate	Migrate and verify	2026-11-10T20:20:09.6589100Z drop cascades to table recentsearches
+migrate	Migrate and verify	2026-11-10T20:20:09.6589330Z drop cascades to type channel_type
+migrate	Migrate and verify	2026-11-10T20:20:09.6589570Z drop cascades to type team_type
+migrate	Migrate and verify	2026-11-10T20:20:09.6589810Z drop cascades to type upload_session_type
+migrate	Migrate and verify	2026-11-10T20:20:09.6590110Z drop cascades to table postreminders
+migrate	Migrate and verify	2026-11-10T20:20:09.6590310Z drop cascades to table notifyadmin
+migrate	Migrate and verify	2026-11-10T20:20:09.6590590Z drop cascades to table postspriority
+migrate	Migrate and verify	2026-11-10T20:20:09.6590840Z drop cascades to table postacknowledgements
+migrate	Migrate and verify	2026-11-10T20:20:09.6591060Z drop cascades to table drafts
+migrate	Migrate and verify	2026-11-10T20:20:09.6591310Z drop cascades to table trueupreviewhistory
+migrate	Migrate and verify	2026-11-10T20:20:09.6591560Z drop cascades to table persistentnotifications
+migrate	Migrate and verify	2026-11-10T20:20:09.6591820Z drop cascades to table desktoptokens
+migrate	Migrate and verify	2026-11-10T20:20:09.6592050Z drop cascades to table retentionidsfordeletion
+migrate	Migrate and verify	2026-11-10T20:20:09.6592330Z drop cascades to materialized view poststats
+migrate	Migrate and verify	2026-11-10T20:20:09.6592640Z drop cascades to type outgoingoauthconnections_granttype
+migrate	Migrate and verify	2026-11-10T20:20:09.6592930Z drop cascades to table outgoingoauthconnections
+migrate	Migrate and verify	2026-11-10T20:20:09.6894910Z NOTICE:  schema "mattermost" does not exist, skipping
+migrate	Migrate and verify	2026-11-10T20:20:09.6976710Z DROP SCHEMA
+migrate	Migrate and verify	2026-11-10T20:20:09.6977270Z DROP SCHEMA
+migrate	Migrate and verify	2026-11-10T20:20:09.6977450Z CREATE SCHEMA
+migrate	Migrate and verify	2026-11-10T20:20:09.6977680Z ALTER ROLE
+migrate	Migrate and verify	2026-11-10T20:20:10.1591710Z {"level":"warn","msg":"DefaultServerLocale must be one of the supported locales. Setting DefaultServerLocale to en as default value.","fields":{"locale":"en"}}
+migrate	Migrate and verify	2026-11-10T20:20:10.1592630Z {"level":"warn","msg":"DefaultClientLocale must be one of the supported locales. Setting DefaultClientLocale to en as default value.","fields":{"locale":"en"}}
+migrate	Migrate and verify	2026-11-10T20:20:10.1600860Z {"level":"warn","msg":"DefaultServerLocale must be one of the supported locales. Setting DefaultServerLocale to en as default value.","fields":{"locale":"en"}}
+migrate	Migrate and verify	2026-11-10T20:20:10.1601660Z {"level":"warn","msg":"DefaultClientLocale must be one of the supported locales. Setting DefaultClientLocale to en as default value.","fields":{"locale":"en"}}
+migrate	Migrate and verify	2026-11-10T20:20:10.1711580Z ^[[36minfo^[[0m [2026-11-10 20:20:10.262 Z] Pinging SQL ^[[36mcaller^[[0m="sqlstore/store.go:261" ^[[36mdatabase^[[0m=master ^[[36mdataSource^[[0m="***postgres:5432/mattermost?sslmode=disable"
+migrate	Migrate and verify	2026-11-10T20:20:10.2061260Z {"level":"debug","msg":"morph.go:169: ==  create_teams: migrating (up)  ==================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2262560Z {"level":"debug","msg":"morph.go:177: ==  create_teams: migrated (0.0197s)  ==============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2263570Z {"level":"debug","msg":"morph.go:169: ==  create_team_members: migrating (up)  ===========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2288880Z {"level":"debug","msg":"morph.go:177: ==  create_team_members: migrated (0.0028s)  =======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2289510Z {"level":"debug","msg":"morph.go:169: ==  create_cluster_discovery: migrating (up)  ======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2311790Z {"level":"debug","msg":"morph.go:177: ==  create_cluster_discovery: migrated (0.0024s)  ==================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2312440Z {"level":"debug","msg":"morph.go:169: ==  create_command_webhooks: migrating (up)  =======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2331630Z {"level":"debug","msg":"morph.go:177: ==  create_command_webhooks: migrated (0.0019s)  ===================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2332280Z {"level":"debug","msg":"morph.go:169: ==  create_compliances: migrating (up)  ============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2353240Z {"level":"debug","msg":"morph.go:177: ==  create_compliances: migrated (0.0021s)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2353930Z {"level":"debug","msg":"morph.go:169: ==  create_emojis: migrating (up)  =================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2386140Z {"level":"debug","msg":"morph.go:177: ==  create_emojis: migrated (0.0033s)  =============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2386770Z {"level":"debug","msg":"morph.go:169: ==  create_user_groups: migrating (up)  ============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2437940Z {"level":"debug","msg":"morph.go:177: ==  create_user_groups: migrated (0.0051s)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2438580Z {"level":"debug","msg":"morph.go:169: ==  create_group_members: migrating (up)  ==========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2457890Z {"level":"debug","msg":"morph.go:177: ==  create_group_members: migrated (0.0020s)  ======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2458530Z {"level":"debug","msg":"morph.go:169: ==  create_group_teams: migrating (up)  ============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2482400Z {"level":"debug","msg":"morph.go:177: ==  create_group_teams: migrated (0.0024s)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2483050Z {"level":"debug","msg":"morph.go:169: ==  create_group_channels: migrating (up)  =========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2512170Z {"level":"debug","msg":"morph.go:177: ==  create_group_channels: migrated (0.0029s)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2512800Z {"level":"debug","msg":"morph.go:169: ==  create_link_metadata: migrating (up)  ==========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2536030Z {"level":"debug","msg":"morph.go:177: ==  create_link_metadata: migrated (0.0024s)  ======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2536650Z {"level":"debug","msg":"morph.go:169: ==  create_commands: migrating (up)  ===============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2582880Z {"level":"debug","msg":"morph.go:177: ==  create_commands: migrated (0.0046s)  ===========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2583480Z {"level":"debug","msg":"morph.go:169: ==  create_incoming_webhooks: migrating (up)  ======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2655430Z {"level":"debug","msg":"morph.go:177: ==  create_incoming_webhooks: migrated (0.0072s)  ==================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2656300Z {"level":"debug","msg":"morph.go:169: ==  create_outgoing_webhooks: migrating (up)  ======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2768930Z {"level":"debug","msg":"morph.go:177: ==  create_outgoing_webhooks: migrated (0.0112s)  ==================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2769620Z {"level":"debug","msg":"morph.go:169: ==  create_systems: migrating (up)  ================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2800170Z {"level":"debug","msg":"morph.go:177: ==  create_systems: migrated (0.0019s)  ============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2800790Z {"level":"debug","msg":"morph.go:169: ==  create_reactions: migrating (up)  ==============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2811270Z {"level":"debug","msg":"morph.go:177: ==  create_reactions: migrated (0.0024s)  ==========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2811900Z {"level":"debug","msg":"morph.go:169: ==  create_roles: migrating (up)  ==================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2843840Z {"level":"debug","msg":"morph.go:177: ==  create_roles: migrated (0.0030s)  ==============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2844490Z {"level":"debug","msg":"morph.go:169: ==  create_schemes: migrating (up)  ================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2891730Z {"level":"debug","msg":"morph.go:177: ==  create_schemes: migrated (0.0049s)  ============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2892370Z {"level":"debug","msg":"morph.go:169: ==  create_licenses: migrating (up)  ===============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2908460Z {"level":"debug","msg":"morph.go:177: ==  create_licenses: migrated (0.0018s)  ===========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.2909100Z {"level":"debug","msg":"morph.go:169: ==  create_posts: migrating (up)  ==================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3011150Z {"level":"debug","msg":"morph.go:177: ==  create_posts: migrated (0.0099s)  ==============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3011860Z {"level":"debug","msg":"morph.go:169: ==  create_product_notice_view_state: migrating (up)  ==============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3035830Z {"level":"debug","msg":"morph.go:177: ==  create_product_notice_view_state: migrated (0.0027s)  ==========================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3036460Z {"level":"debug","msg":"morph.go:169: ==  create_sessions: migrating (up)  ===============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3079680Z {"level":"debug","msg":"morph.go:177: ==  create_sessions: migrated (0.0044s)  ===========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3080330Z {"level":"debug","msg":"morph.go:169: ==  create_terms_of_service: migrating (up)  =======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3099210Z {"level":"debug","msg":"morph.go:177: ==  create_terms_of_service: migrated (0.0018s)  ===================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3099810Z {"level":"debug","msg":"morph.go:169: ==  create_audits: migrating (up)  =================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3124700Z {"level":"debug","msg":"morph.go:177: ==  create_audits: migrated (0.0026s)  =============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3125340Z {"level":"debug","msg":"morph.go:169: ==  create_oauth_access_data: migrating (up)  ======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3157680Z {"level":"debug","msg":"morph.go:177: ==  create_oauth_access_data: migrated (0.0033s)  ==================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3158520Z {"level":"debug","msg":"morph.go:169: ==  create_preferences: migrating (up)  ============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3223460Z {"level":"debug","msg":"morph.go:177: ==  create_preferences: migrated (0.0065s)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3224080Z {"level":"debug","msg":"morph.go:169: ==  create_status: migrating (up)  =================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3240670Z {"level":"debug","msg":"morph.go:177: ==  create_status: migrated (0.0018s)  =============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3241290Z {"level":"debug","msg":"morph.go:169: ==  create_tokens: migrating (up)  =================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3282010Z {"level":"debug","msg":"morph.go:177: ==  create_tokens: migrated (0.0041s)  =============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3282600Z {"level":"debug","msg":"morph.go:169: ==  create_bots: migrating (up)  ===================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3299940Z {"level":"debug","msg":"morph.go:177: ==  create_bots: migrated (0.0019s)  ===============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3300520Z {"level":"debug","msg":"morph.go:169: ==  create_user_access_tokens: migrating (up)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3327820Z {"level":"debug","msg":"morph.go:177: ==  create_user_access_tokens: migrated (0.0027s)  =================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3328470Z {"level":"debug","msg":"morph.go:169: ==  create_remote_clusters: migrating (up)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3358510Z {"level":"debug","msg":"morph.go:177: ==  create_remote_clusters: migrated (0.0030s)  ====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3359210Z {"level":"debug","msg":"morph.go:169: ==  create_sharedchannels: migrating (up)  =========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3384580Z {"level":"debug","msg":"morph.go:177: ==  create_sharedchannels: migrated (0.0027s)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3385230Z {"level":"debug","msg":"morph.go:169: ==  create_sidebar_channels: migrating (up)  =======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3415410Z {"level":"debug","msg":"morph.go:177: ==  create_sidebar_channels: migrated (0.0030s)  ===================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3416020Z {"level":"debug","msg":"morph.go:169: ==  create_oauthauthdata: migrating (up)  ==========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3465850Z {"level":"debug","msg":"morph.go:177: ==  create_oauthauthdata: migrated (0.0049s)  ======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3466510Z {"level":"debug","msg":"morph.go:169: ==  create_sharedchannelattachments: migrating (up)  ===============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3484150Z {"level":"debug","msg":"morph.go:177: ==  create_sharedchannelattachments: migrated (0.0019s)  ===========================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3484810Z {"level":"debug","msg":"morph.go:169: ==  create_sharedchannelusers: migrating (up)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3518270Z {"level":"debug","msg":"morph.go:177: ==  create_sharedchannelusers: migrated (0.0034s)  =================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3518920Z {"level":"debug","msg":"morph.go:169: ==  create_sharedchannelremotes: migrating (up)  ===================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3537460Z {"level":"debug","msg":"morph.go:177: ==  create_sharedchannelremotes: migrated (0.0020s)  ===============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3538310Z {"level":"debug","msg":"morph.go:169: ==  create_jobs: migrating (up)  ===================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3563690Z {"level":"debug","msg":"morph.go:177: ==  create_jobs: migrated (0.0026s)  ===============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3564290Z {"level":"debug","msg":"morph.go:169: ==  create_channel_member_history: migrating (up)  =================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3574410Z {"level":"debug","msg":"morph.go:177: ==  create_channel_member_history: migrated (0.0010s)  =============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3575040Z {"level":"debug","msg":"morph.go:169: ==  create_sidebar_categories: migrating (up)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3606940Z {"level":"debug","msg":"morph.go:177: ==  create_sidebar_categories: migrated (0.0032s)  =================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3607570Z {"level":"debug","msg":"morph.go:169: ==  create_upload_sessions: migrating (up)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3652550Z {"level":"debug","msg":"morph.go:177: ==  create_upload_sessions: migrated (0.0045s)  ====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3653210Z {"level":"debug","msg":"morph.go:169: ==  create_threads: migrating (up)  ================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3681920Z {"level":"debug","msg":"morph.go:177: ==  create_threads: migrated (0.0027s)  ============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3682610Z {"level":"debug","msg":"morph.go:169: ==  thread_memberships: migrating (up)  ============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3716060Z {"level":"debug","msg":"morph.go:177: ==  thread_memberships: migrated (0.0037s)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3716670Z {"level":"debug","msg":"morph.go:169: ==  create_user_terms_of_service: migrating (up)  ==================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3741200Z {"level":"debug","msg":"morph.go:177: ==  create_user_terms_of_service: migrated (0.0025s)  ==============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3741850Z {"level":"debug","msg":"morph.go:169: ==  create_plugin_key_value_store: migrating (up)  =================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3781910Z {"level":"debug","msg":"morph.go:177: ==  create_plugin_key_value_store: migrated (0.0039s)  =============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3782590Z {"level":"debug","msg":"morph.go:169: ==  create_users: migrating (up)  ==================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3911810Z {"level":"debug","msg":"morph.go:177: ==  create_users: migrated (0.0130s)  ==============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3912490Z {"level":"debug","msg":"morph.go:169: ==  create_file_info: migrating (up)  ==============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3963540Z {"level":"debug","msg":"morph.go:177: ==  create_file_info: migrated (0.0053s)  ==========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.3964180Z {"level":"debug","msg":"morph.go:169: ==  create_oauth_apps: migrating (up)  =============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4002540Z {"level":"debug","msg":"morph.go:177: ==  create_oauth_apps: migrated (0.0038s)  =========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4003190Z {"level":"debug","msg":"morph.go:169: ==  create_channels: migrating (up)  ===============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4136460Z {"level":"debug","msg":"morph.go:177: ==  create_channels: migrated (0.0133s)  ===========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4137380Z {"level":"debug","msg":"morph.go:169: ==  create_channelmembers: migrating (up)  =========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4162510Z {"level":"debug","msg":"morph.go:177: ==  create_channelmembers: migrated (0.0027s)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4215300Z {"level":"debug","msg":"morph.go:169: ==  create_msg_root_count: migrating (up)  =========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4215940Z {"level":"debug","msg":"morph.go:177: ==  create_msg_root_count: migrated (0.0053s)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4216830Z {"level":"debug","msg":"morph.go:169: ==  create_public_channels: migrating (up)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4280530Z {"level":"debug","msg":"morph.go:177: ==  create_public_channels: migrated (0.0065s)  ====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4281190Z {"level":"debug","msg":"morph.go:169: ==  create_retention_policies: migrating (up)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4351290Z {"level":"debug","msg":"morph.go:177: ==  create_retention_policies: migrated (0.0069s)  =================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4352060Z {"level":"debug","msg":"morph.go:169: ==  create_crt_channelmembership_count: migrating (up)  ============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4361140Z {"level":"debug","msg":"morph.go:177: ==  create_crt_channelmembership_count: migrated (0.0010s)  ========================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4361870Z {"level":"debug","msg":"morph.go:169: ==  create_crt_thread_count_and_unreads: migrating (up)  ===========================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4371630Z {"level":"debug","msg":"morph.go:177: ==  create_crt_thread_count_and_unreads: migrated (0.0012s)  =======================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4372290Z {"level":"debug","msg":"morph.go:169: ==  upgrade_channels_v6.0: migrating (up)  =========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4390840Z {"level":"debug","msg":"morph.go:177: ==  upgrade_channels_v6.0: migrated (0.0020s)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4391440Z {"level":"debug","msg":"morph.go:169: ==  upgrade_command_webhooks_v6.0: migrating (up)  =================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4408660Z {"level":"debug","msg":"morph.go:177: ==  upgrade_command_webhooks_v6.0: migrated (0.0018s)  =============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4409300Z {"level":"debug","msg":"morph.go:169: ==  upgrade_channelmembers_v6.0: migrating (up)  ===================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4465890Z {"level":"debug","msg":"morph.go:177: ==  upgrade_channelmembers_v6.0: migrated (0.0055s)  ===============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4466550Z {"level":"debug","msg":"morph.go:169: ==  upgrade_users_v6.0: migrating (up)  ============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4722880Z {"level":"debug","msg":"morph.go:177: ==  upgrade_users_v6.0: migrated (0.0257s)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4723510Z {"level":"debug","msg":"morph.go:169: ==  upgrade_jobs_v6.0: migrating (up)  =============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4751940Z {"level":"debug","msg":"morph.go:177: ==  upgrade_jobs_v6.0: migrated (0.0030s)  =========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4752590Z {"level":"debug","msg":"morph.go:169: ==  upgrade_link_metadata_v6.0: migrating (up)  ====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4785880Z {"level":"debug","msg":"morph.go:177: ==  upgrade_link_metadata_v6.0: migrated (0.0033s)  ================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4786510Z {"level":"debug","msg":"morph.go:169: ==  upgrade_sessions_v6.0: migrating (up)  =========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4838980Z {"level":"debug","msg":"morph.go:177: ==  upgrade_sessions_v6.0: migrated (0.0053s)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4839740Z {"level":"debug","msg":"morph.go:169: ==  upgrade_threads_v6.0: migrating (up)  ==========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4876220Z {"level":"debug","msg":"morph.go:177: ==  upgrade_threads_v6.0: migrated (0.0038s)  ======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4877080Z {"level":"debug","msg":"morph.go:169: ==  upgrade_status_v6.0: migrating (up)  ===========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4887430Z {"level":"debug","msg":"morph.go:177: ==  upgrade_status_v6.0: migrated (0.0011s)  =======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4896760Z {"level":"debug","msg":"morph.go:169: ==  upgrade_groupchannels_v6.0: migrating (up)  ====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4898320Z {"level":"debug","msg":"morph.go:177: ==  upgrade_groupchannels_v6.0: migrated (0.0010s)  ================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.4898910Z {"level":"debug","msg":"morph.go:169: ==  upgrade_posts_v6.0: migrating (up)  ============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5039120Z {"level":"debug","msg":"morph.go:177: ==  upgrade_posts_v6.0: migrated (0.0140s)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5039770Z {"level":"debug","msg":"morph.go:169: ==  upgrade_channelmembers_v6.1: migrating (up)  ===================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5058170Z {"level":"debug","msg":"morph.go:177: ==  upgrade_channelmembers_v6.1: migrated (0.0020s)  ===============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5058780Z {"level":"debug","msg":"morph.go:169: ==  upgrade_teammembers_v6.1: migrating (up)  ======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5075330Z {"level":"debug","msg":"morph.go:177: ==  upgrade_teammembers_v6.1: migrated (0.0017s)  ==================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5075980Z {"level":"debug","msg":"morph.go:169: ==  upgrade_jobs_v6.1: migrating (up)  =============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5085330Z {"level":"debug","msg":"morph.go:177: ==  upgrade_jobs_v6.1: migrated (0.0010s)  =========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5085960Z {"level":"debug","msg":"morph.go:169: ==  upgrade_cte_v6.1: migrating (up)  ==============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5112450Z {"level":"debug","msg":"morph.go:177: ==  upgrade_cte_v6.1: migrated (0.0025s)  ==========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5113310Z {"level":"debug","msg":"morph.go:169: ==  upgrade_sessions_v6.1: migrating (up)  =========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5130670Z {"level":"debug","msg":"morph.go:177: ==  upgrade_sessions_v6.1: migrated (0.0019s)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5131270Z {"level":"debug","msg":"morph.go:169: ==  upgrade_schemes_v6.3: migrating (up)  ==========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5140570Z {"level":"debug","msg":"morph.go:177: ==  upgrade_schemes_v6.3: migrated (0.0010s)  ======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5141180Z {"level":"debug","msg":"morph.go:169: ==  upgrade_plugin_key_value_store_v6.3: migrating (up)  ===========================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5161400Z {"level":"debug","msg":"morph.go:177: ==  upgrade_plugin_key_value_store_v6.3: migrated (0.0021s)  =======================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5162020Z {"level":"debug","msg":"morph.go:169: ==  upgrade_users_v6.3: migrating (up)  ============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5165660Z {"level":"debug","msg":"morph.go:177: ==  upgrade_users_v6.3: migrated (0.0004s)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5166300Z {"level":"debug","msg":"morph.go:169: ==  alter_upload_sessions_index: migrating (up)  ===================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5174590Z {"level":"debug","msg":"morph.go:177: ==  alter_upload_sessions_index: migrated (0.0009s)  ===============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5175660Z {"level":"debug","msg":"morph.go:169: ==  upgrade_lastrootpostat: migrating (up)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5200000Z {"level":"debug","msg":"morph.go:177: ==  upgrade_lastrootpostat: migrated (0.0025s)  ====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5200610Z {"level":"debug","msg":"morph.go:169: ==  upgrade_users_v6.5: migrating (up)  ============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5203230Z {"level":"debug","msg":"morph.go:177: ==  upgrade_users_v6.5: migrated (0.0004s)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5203810Z {"level":"debug","msg":"morph.go:169: ==  create_oauth_mattermost_app_id: migrating (up)  ================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5207140Z {"level":"debug","msg":"morph.go:177: ==  create_oauth_mattermost_app_id: migrated (0.0004s)  ============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5207750Z {"level":"debug","msg":"morph.go:169: ==  usergroups_displayname_index: migrating (up)  ==================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5218640Z {"level":"debug","msg":"morph.go:177: ==  usergroups_displayname_index: migrated (0.0011s)  ==============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5219230Z {"level":"debug","msg":"morph.go:169: ==  posts_createat_id: migrating (up)  =============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5229140Z {"level":"debug","msg":"morph.go:177: ==  posts_createat_id: migrated (0.0010s)  =========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5229700Z {"level":"debug","msg":"morph.go:169: ==  threads_deleteat: migrating (up)  ==============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5232000Z {"level":"debug","msg":"morph.go:177: ==  threads_deleteat: migrated (0.0003s)  ==========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5232600Z {"level":"debug","msg":"morph.go:169: ==  upgrade_oauth_mattermost_app_id: migrating (up)  ===============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5249570Z {"level":"debug","msg":"morph.go:177: ==  upgrade_oauth_mattermost_app_id: migrated (0.0017s)  ===========================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5250160Z {"level":"debug","msg":"morph.go:169: ==  threads_threaddeleteat: migrating (up)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5256030Z {"level":"debug","msg":"morph.go:177: ==  threads_threaddeleteat: migrated (0.0007s)  ====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5256610Z {"level":"debug","msg":"morph.go:169: ==  recent_searches: migrating (up)  ===============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5276230Z {"level":"debug","msg":"morph.go:177: ==  recent_searches: migrated (0.0020s)  ===========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5276820Z {"level":"debug","msg":"morph.go:169: ==  fileinfo_add_archived_column: migrating (up)  ==================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5281160Z {"level":"debug","msg":"morph.go:177: ==  fileinfo_add_archived_column: migrated (0.0005s)  ==============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5281750Z {"level":"debug","msg":"morph.go:169: ==  add_cloud_limits_archived: migrating (up)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5285970Z {"level":"debug","msg":"morph.go:177: ==  add_cloud_limits_archived: migrated (0.0005s)  =================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5286550Z {"level":"debug","msg":"morph.go:169: ==  sidebar_categories_index: migrating (up)  ======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5310800Z {"level":"debug","msg":"morph.go:177: ==  sidebar_categories_index: migrated (0.0023s)  ==================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5311670Z {"level":"debug","msg":"morph.go:169: ==  remaining_migrations: migrating (up)  ==========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5326440Z {"level":"debug","msg":"morph.go:177: ==  remaining_migrations: migrated (0.0017s)  ======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5327040Z {"level":"debug","msg":"morph.go:169: ==  add-channelid-to-reaction: migrating (up)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5340080Z {"level":"debug","msg":"morph.go:177: ==  add-channelid-to-reaction: migrated (0.0012s)  =================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5340720Z {"level":"debug","msg":"morph.go:169: ==  create_enums: migrating (up)  ==================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5534530Z {"level":"debug","msg":"morph.go:177: ==  create_enums: migrated (0.0194s)  ==============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5535170Z {"level":"debug","msg":"morph.go:169: ==  create_post_reminder: migrating (up)  ==========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5551280Z {"level":"debug","msg":"morph.go:177: ==  create_post_reminder: migrated (0.0019s)  ======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5551890Z {"level":"debug","msg":"morph.go:169: ==  add_createat_to_teamembers: migrating (up)  ====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5560920Z {"level":"debug","msg":"morph.go:177: ==  add_createat_to_teamembers: migrated (0.0010s)  ================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5561500Z {"level":"debug","msg":"morph.go:169: ==  notify_admin: migrating (up)  ==================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5573920Z {"level":"debug","msg":"morph.go:177: ==  notify_admin: migrated (0.0013s)  ==============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5574490Z {"level":"debug","msg":"morph.go:169: ==  threads_teamid: migrating (up)  ================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5577790Z {"level":"debug","msg":"morph.go:177: ==  threads_teamid: migrated (0.0003s)  ============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5578360Z {"level":"debug","msg":"morph.go:169: ==  remove_posts_parentid: migrating (up)  =========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5580820Z {"level":"debug","msg":"morph.go:177: ==  remove_posts_parentid: migrated (0.0003s)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5581400Z {"level":"debug","msg":"morph.go:169: ==  threads_threadteamid: migrating (up)  ==========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5588840Z {"level":"debug","msg":"morph.go:177: ==  threads_threadteamid: migrated (0.0008s)  ======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5589440Z {"level":"debug","msg":"morph.go:169: ==  create_posts_priority: migrating (up)  =========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5602990Z {"level":"debug","msg":"morph.go:177: ==  create_posts_priority: migrated (0.0014s)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5603580Z {"level":"debug","msg":"morph.go:169: ==  create_post_acknowledgements: migrating (up)  ==================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5617490Z {"level":"debug","msg":"morph.go:177: ==  create_post_acknowledgements: migrated (0.0010s)  ==============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5618070Z {"level":"debug","msg":"morph.go:169: ==  create_drafts: migrating (up)  =================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5632300Z {"level":"debug","msg":"morph.go:177: ==  create_drafts: migrated (0.0018s)  =============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5633040Z {"level":"debug","msg":"morph.go:169: ==  add_draft_priority_column: migrating (up)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5636290Z {"level":"debug","msg":"morph.go:177: ==  add_draft_priority_column: migrated (0.0004s)  =================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5636890Z {"level":"debug","msg":"morph.go:169: ==  create_true_up_review_history: migrating (up)  =================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5649480Z {"level":"debug","msg":"morph.go:177: ==  create_true_up_review_history: migrated (0.0013s)  =============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5650080Z {"level":"debug","msg":"morph.go:169: ==  posts_originalid_index: migrating (up)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5658410Z {"level":"debug","msg":"morph.go:177: ==  posts_originalid_index: migrated (0.0009s)  ====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5659000Z {"level":"debug","msg":"morph.go:169: ==  add_sentat_to_notifyadmin: migrating (up)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5662230Z {"level":"debug","msg":"morph.go:177: ==  add_sentat_to_notifyadmin: migrated (0.0004s)  =================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5662810Z {"level":"debug","msg":"morph.go:169: ==  upgrade_notifyadmin: migrating (up)  ===========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5677450Z {"level":"debug","msg":"morph.go:177: ==  upgrade_notifyadmin: migrated (0.0015s)  =======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5678050Z {"level":"debug","msg":"morph.go:169: ==  remove_tokens: migrating (up)  =================================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5687170Z {"level":"debug","msg":"morph.go:177: ==  remove_tokens: migrated (0.0010s)  =============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5687760Z {"level":"debug","msg":"morph.go:169: ==  fileinfo_channelid: migrating (up)  ============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5704000Z {"level":"debug","msg":"morph.go:177: ==  fileinfo_channelid: migrated (0.0017s)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5704600Z {"level":"debug","msg":"morph.go:169: ==  threadmemberships_cleanup: migrating (up)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5710260Z {"level":"debug","msg":"morph.go:177: ==  threadmemberships_cleanup: migrated (0.0007s)  =================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5710870Z {"level":"debug","msg":"morph.go:169: ==  remove_orphaned_oauth_preferences: migrating (up)  =============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5716410Z {"level":"debug","msg":"morph.go:177: ==  remove_orphaned_oauth_preferences: migrated (0.0006s)  =========================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5717040Z {"level":"debug","msg":"morph.go:169: ==  create_persistent_notifications: migrating (up)  ===============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5727460Z {"level":"debug","msg":"morph.go:177: ==  create_persistent_notifications: migrated (0.0011s)  ===========================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5728060Z {"level":"debug","msg":"morph.go:169: ==  update_vacuuming: migrating (up)  ==============================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5733910Z {"level":"debug","msg":"morph.go:177: ==  update_vacuuming: migrated (0.0007s)  ==========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5734490Z {"level":"debug","msg":"morph.go:169: ==  rework_desktop_tokens: migrating (up)  =========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5749650Z {"level":"debug","msg":"morph.go:177: ==  rework_desktop_tokens: migrated (0.0015s)  =====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5750250Z {"level":"debug","msg":"morph.go:169: ==  create_retentionidsfordeletion_table: migrating (up)  ==========================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5773390Z {"level":"debug","msg":"morph.go:177: ==  create_retentionidsfordeletion_table: migrated (0.0024s)  ======================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5774020Z {"level":"debug","msg":"morph.go:169: ==  sharedchannelremotes_drop_nextsyncat_description: migrating (up)  ==============================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5777610Z {"level":"debug","msg":"morph.go:177: ==  sharedchannelremotes_drop_nextsyncat_description: migrated (0.0004s)  ==========================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5778230Z {"level":"debug","msg":"morph.go:169: ==  user_reporting_changes: migrating (up)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5791930Z {"level":"debug","msg":"morph.go:177: ==  user_reporting_changes: migrated (0.0015s)  ====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5792530Z {"level":"debug","msg":"morph.go:169: ==  create_outgoing_oauth_connections: migrating (up)  =============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5818780Z {"level":"debug","msg":"morph.go:177: ==  create_outgoing_oauth_connections: migrated (0.0027s)  =========================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5819380Z {"level":"debug","msg":"morph.go:169: ==  msteams_shared_channels: migrating (up)  =======================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5826890Z {"level":"debug","msg":"morph.go:177: ==  msteams_shared_channels: migrated (0.0008s)  ===================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5827470Z {"level":"debug","msg":"morph.go:169: ==  create_index_poststats: migrating (up)  ========================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5840170Z {"level":"debug","msg":"morph.go:177: ==  create_index_poststats: migrated (0.0013s)  ====================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5840770Z {"level":"debug","msg":"morph.go:169: ==  msteams_shared_channels_opts: migrating (up)  ==================================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5845180Z {"level":"debug","msg":"morph.go:177: ==  msteams_shared_channels_opts: migrated (0.0005s)  ==============================================\n"}
+migrate	Migrate and verify	2026-11-10T20:20:10.5845760Z Database successfully migrated
+migrate	Migrate and verify	2026-11-10T20:20:10.9339140Z 2026-11-10 20:20:11 pinging postgres...
+migrate	Migrate and verify	2026-11-10T20:20:10.9344970Z 2026-11-10 20:20:11 connected to postgres successfully.
+migrate	Migrate and verify	2026-11-10T20:20:11.4348660Z 2026-11-10T20:20:11.046004Z LOG pgloader version "3.6.af8c3c1"
+migrate	Migrate and verify	2026-11-10T20:20:11.4356650Z 2026-11-10T20:20:11.050004Z LOG Data errors in '/tmp/pgloader/'
+migrate	Migrate and verify	2026-11-10T20:20:11.4358410Z 2026-11-10T20:20:11.050004Z LOG Parsing commands from file #P"/home/migration/migration.load"
+migrate	Migrate and verify	2026-11-10T20:20:11.6242630Z 2026-11-10T20:20:11.238020Z LOG Migrating from #<MYSQL-CONNECTION mysql://mmuser@mysql:3306/mattermost {1005CEFE53}>
+migrate	Migrate and verify	2026-11-10T20:20:11.6243290Z 2026-11-10T20:20:11.238020Z LOG Migrating into #<PGSQL-CONNECTION pgsql://mmuser@postgres:5432/mattermost {1005CEFED3}>
+migrate	Migrate and verify	2026-11-10T20:20:11.8008160Z 2026-11-10T20:20:11.414034Z WARNING Source column "mattermost"."ChannelMembers"."schemeuser" is casted to type "smallint" which is not the same as "boolean", the type of current target database column "mattermost"."channelmembers"."schemeuser".
+migrate	Migrate and verify	2026-11-10T20:20:11.8009410Z 2026-11-10T20:20:11.415034Z WARNING Source column "mattermost"."ChannelMembers"."schemeadmin" is casted to type "smallint" which is not the same as "boolean", the type of current target database column "mattermost"."channelmembers"."schemeadmin".
+migrate	Migrate and verify	2026-11-10T20:20:11.8010700Z 2026-11-10T20:20:11.415034Z WARNING Source column "mattermost"."ChannelMembers"."schemeguest" is casted to type "smallint" which is not the same as "boolean", the type of current target database column "mattermost"."channelmembers"."schemeguest".
+migrate	Migrate and verify	2026-11-10T20:20:11.8012300Z 2026-11-10T20:20:11.415034Z WARNING Source column "mattermost"."Channels"."type" is casted to type "channel_type" which is not the same as "mattermost.channel_type", the type of current target database column "mattermost"."channels"."type".
+migrate	Migrate and verify	2026-11-10T20:20:11.8013590Z 2026-11-10T20:20:11.415034Z WARNING Source column "mattermost"."OutgoingOAuthConnections"."oauthtokenurl" is casted to type "varchar" which is not the same as "text", the type of current target database column "mattermost"."outgoingoauthconnections"."oauthtokenurl".
+migrate	Migrate and verify	2026-11-10T20:20:11.8014890Z 2026-11-10T20:20:11.415034Z WARNING Source column "mattermost"."OutgoingOAuthConnections"."granttype" is casted to type "varchar" which is not the same as "mattermost.outgoingoauthconnections_granttype", the type of current target database column "mattermost"."outgoingoauthconnections"."granttype".
+migrate	Migrate and verify	2026-11-10T20:20:11.8016200Z 2026-11-10T20:20:11.415034Z WARNING Source column "mattermost"."RetentionIdsForDeletion"."ids" is casted to type "jsonb" which is not the same as "character varying[]", the type of current target database column "mattermost"."retentionidsfordeletion"."ids".
+migrate	Migrate and verify	2026-11-10T20:20:11.8017330Z 2026-11-10T20:20:11.415034Z WARNING Source column "mattermost"."TeamMembers"."schemeuser" is casted to type "smallint" which is not the same as "boolean", the type of current target database column "mattermost"."teammembers"."schemeuser".
+migrate	Migrate and verify	2026-11-10T20:20:11.8018570Z 2026-11-10T20:20:11.415034Z WARNING Source column "mattermost"."TeamMembers"."schemeadmin" is casted to type "smallint" which is not the same as "boolean", the type of current target database column "mattermost"."teammembers"."schemeadmin".
+migrate	Migrate and verify	2026-11-10T20:20:11.8019740Z 2026-11-10T20:20:11.415034Z WARNING Source column "mattermost"."TeamMembers"."schemeguest" is casted to type "smallint" which is not the same as "boolean", the type of current target database column "mattermost"."teammembers"."schemeguest".
+migrate	Migrate and verify	2026-11-10T20:20:11.8020830Z 2026-11-10T20:20:11.415034Z WARNING Source column "mattermost"."Teams"."type" is casted to type "team_type" which is not the same as "mattermost.team_type", the type of current target database column "mattermost"."teams"."type".
+migrate	Migrate and verify	2026-11-10T20:20:11.8021980Z 2026-11-10T20:20:11.415034Z WARNING Source column "mattermost"."UploadSessions"."type" is casted to type "upload_session_type" which is not the same as "mattermost.upload_session_type", the type of current target database column "mattermost"."uploadsessions"."type".
+migrate	Migrate and verify	2026-11-10T20:20:11.8064630Z 2026-11-10T20:20:11.421035Z WARNING PostgreSQL warning: constraint "fk_retentionpolicieschannels_retentionpolicies" of relation "retentionpolicieschannels" does not exist, skipping
+migrate	Migrate and verify	2026-11-10T20:20:11.8065660Z 2026-11-10T20:20:11.421035Z WARNING PostgreSQL warning: constraint "fk_retentionpoliciesteams_retentionpolicies" of relation "retentionpoliciesteams" does not exist, skipping
+migrate	Migrate and verify	2026-11-10T20:20:12.3816400Z 2026-11-10T20:20:11.996080Z LOG report summary reset
+migrate	Migrate and verify	2026-11-10T20:20:12.3926320Z                           table name     errors       rows      bytes      total time
+migrate	Migrate and verify	2026-11-10T20:20:12.3927260Z ------------------------------------  ---------  ---------  ---------  --------------
+migrate	Migrate and verify	2026-11-10T20:20:12.3960170Z                          before load          0          4                     0.030s
+migrate	Migrate and verify	2026-11-10T20:20:12.3961600Z                      fetch meta data          0         67                     0.071s
+migrate	Migrate and verify	2026-11-10T20:20:12.3961930Z                    Drop Foreign Keys          0          4                     0.006s
+migrate	Migrate and verify	2026-11-10T20:20:12.3962250Z ------------------------------------  ---------  ---------  ---------  --------------
+migrate	Migrate and verify	2026-11-10T20:20:12.3966730Z                   mattermost.systems          0         52     2.2 kB          0.055s
+migrate	Migrate and verify	2026-11-10T20:20:12.3967100Z                     mattermost.roles          0         23    21.0 kB          0.046s
+migrate	Migrate and verify	2026-11-10T20:20:12.3967460Z    mattermost.productnoticeviewstate          0         11     0.7 kB          0.050s
+migrate	Migrate and verify	2026-11-10T20:20:12.3968250Z                     mattermost.users          0          4     2.0 kB          0.085s
+migrate	Migrate and verify	2026-11-10T20:20:12.3968580Z                     mattermost.posts          0          9     2.1 kB          0.087s
+migrate	Migrate and verify	2026-11-10T20:20:12.3968930Z       mattermost.pluginkeyvaluestore          0          6     0.8 kB          0.039s
+migrate	Migrate and verify	2026-11-10T20:20:12.3969290Z                  mattermost.channels          0          3     0.5 kB          0.148s
+migrate	Migrate and verify	2026-11-10T20:20:12.3969630Z            mattermost.channelmembers          0          3     0.7 kB          0.096s
+migrate	Migrate and verify	2026-11-10T20:20:12.3969970Z                    mattermost.audits          0         10     1.3 kB          0.017s
+migrate	Migrate and verify	2026-11-10T20:20:12.3970310Z            mattermost.publicchannels          0          2     0.2 kB          0.083s
+migrate	Migrate and verify	2026-11-10T20:20:12.3970650Z                  mattermost.sessions          0          2     0.7 kB          0.089s
+migrate	Migrate and verify	2026-11-10T20:20:12.3971020Z      mattermost.channelmemberhistory          0          3     0.2 kB          0.073s
+migrate	Migrate and verify	2026-11-10T20:20:12.3971370Z               mattermost.teammembers          0          1     0.1 kB          0.146s
+migrate	Migrate and verify	2026-11-10T20:20:12.3971710Z                  mattermost.commands          0          0                     0.226s
+migrate	Migrate and verify	2026-11-10T20:20:12.3972040Z                    mattermost.status          0          1     0.1 kB          0.145s
+migrate	Migrate and verify	2026-11-10T20:20:12.3972390Z         mattermost.sidebarcategories          0          3     0.4 kB          0.140s
+migrate	Migrate and verify	2026-11-10T20:20:12.3972750Z           mattermost.commandwebhooks          0          0                     0.187s
+migrate	Migrate and verify	2026-11-10T20:20:12.3973080Z                     mattermost.emoji          0          0                     0.186s
+migrate	Migrate and verify	2026-11-10T20:20:12.3973400Z                      mattermost.bots          0          3     0.4 kB          0.066s
+migrate	Migrate and verify	2026-11-10T20:20:12.3973740Z          mattermost.incomingwebhooks          0          0                     0.237s
+migrate	Migrate and verify	2026-11-10T20:20:12.3974090Z               mattermost.preferences          0          3     0.2 kB          0.091s
+migrate	Migrate and verify	2026-11-10T20:20:12.3974420Z                      mattermost.jobs          0          1     0.1 kB          0.133s
+migrate	Migrate and verify	2026-11-10T20:20:12.3974730Z                    mattermost.drafts          0          0                     0.200s
+migrate	Migrate and verify	2026-11-10T20:20:12.3975060Z                  mattermost.fileinfo          0          1     0.4 kB          0.136s
+migrate	Migrate and verify	2026-11-10T20:20:12.3975400Z          mattermost.clusterdiscovery          0          0                     0.207s
+migrate	Migrate and verify	2026-11-10T20:20:12.3975750Z           mattermost.oauthaccessdata          0          0                     0.281s
+migrate	Migrate and verify	2026-11-10T20:20:12.3976080Z                mattermost.groupteams          0          0                     0.242s
+migrate	Migrate and verify	2026-11-10T20:20:12.3976400Z                     mattermost.teams          0          1     0.2 kB          0.139s
+migrate	Migrate and verify	2026-11-10T20:20:12.3976730Z          mattermost.outgoingwebhooks          0          0                     0.282s
+migrate	Migrate and verify	2026-11-10T20:20:12.3977070Z             mattermost.desktoptokens          0          0                     0.215s
+migrate	Migrate and verify	2026-11-10T20:20:12.3977410Z              mattermost.groupmembers          0          0                     0.246s
+migrate	Migrate and verify	2026-11-10T20:20:12.3977960Z               mattermost.notifyadmin          0          0                     0.236s
+migrate	Migrate and verify	2026-11-10T20:20:12.3978290Z               mattermost.compliances          0          0                     0.179s
+migrate	Migrate and verify	2026-11-10T20:20:12.3978630Z             mattermost.postspriority          0          0                     0.318s
+migrate	Migrate and verify	2026-11-10T20:20:12.3978980Z              mattermost.linkmetadata          0          0                     0.273s
+migrate	Migrate and verify	2026-11-10T20:20:12.3979320Z             mattermost.oauthauthdata          0          0                     0.280s
+migrate	Migrate and verify	2026-11-10T20:20:12.3979660Z             mattermost.groupchannels          0          0                     0.189s
+migrate	Migrate and verify	2026-11-10T20:20:12.3980030Z  mattermost.outgoingoauthconnections          0          0                     0.277s
+migrate	Migrate and verify	2026-11-10T20:20:12.3980480Z      mattermost.postacknowledgements          0          0                     0.319s
+migrate	Migrate and verify	2026-11-10T20:20:12.3980830Z             mattermost.postreminders          0          0                     0.291s
+migrate	Migrate and verify	2026-11-10T20:20:12.3981170Z                  mattermost.licenses          0          0                     0.203s
+migrate	Migrate and verify	2026-11-10T20:20:12.3981520Z   mattermost.retentionidsfordeletion          0          0                     0.350s
+migrate	Migrate and verify	2026-11-10T20:20:12.3981880Z            mattermost.recentsearches          0          0                     0.326s
+migrate	Migrate and verify	2026-11-10T20:20:12.3982220Z                 mattermost.oauthapps          0          0                     0.221s
+migrate	Migrate and verify	2026-11-10T20:20:12.3982550Z            mattermost.remoteclusters          0          0                     0.297s
+migrate	Migrate and verify	2026-11-10T20:20:12.3982910Z mattermost.retentionpolicieschannels          0          0                     0.357s
+migrate	Migrate and verify	2026-11-10T20:20:12.3983290Z   mattermost.persistentnotifications          0          0                     0.224s
+migrate	Migrate and verify	2026-11-10T20:20:12.3983670Z    mattermost.retentionpoliciesteams          0          0                     0.346s
+migrate	Migrate and verify	2026-11-10T20:20:12.3984010Z                 mattermost.reactions          0          0                     0.258s
+migrate	Migrate and verify	2026-11-10T20:20:12.3984360Z      mattermost.sharedchannelremotes          0          0                     0.363s
+migrate	Migrate and verify	2026-11-10T20:20:12.3984720Z        mattermost.sharedchannelusers          0          0                     0.318s
+migrate	Migrate and verify	2026-11-10T20:20:12.3985050Z                   mattermost.schemes          0          0                     0.354s
+migrate	Migrate and verify	2026-11-10T20:20:12.3985380Z         mattermost.retentionpolicies          0          0                     0.268s
+migrate	Migrate and verify	2026-11-10T20:20:12.3985750Z  mattermost.sharedchannelattachments          0          0                     0.323s
+migrate	Migrate and verify	2026-11-10T20:20:12.3986110Z            mattermost.sharedchannels          0          0                     0.386s
+migrate	Migrate and verify	2026-11-10T20:20:12.3986460Z           mattermost.sidebarchannels          0          0                     0.320s
+migrate	Migrate and verify	2026-11-10T20:20:12.3986810Z            mattermost.termsofservice          0          0                     0.386s
+migrate	Migrate and verify	2026-11-10T20:20:12.3987130Z                    mattermost.tokens          0          0                     0.373s
+migrate	Migrate and verify	2026-11-10T20:20:12.3987460Z         mattermost.threadmemberships          0          0                     0.354s
+migrate	Migrate and verify	2026-11-10T20:20:12.3987800Z                   mattermost.threads          0          0                     0.395s
+migrate	Migrate and verify	2026-11-10T20:20:12.3988130Z       mattermost.trueupreviewhistory          0          0                     0.396s
+migrate	Migrate and verify	2026-11-10T20:20:12.3988480Z                mattermost.usergroups          0          0                     0.366s
+migrate	Migrate and verify	2026-11-10T20:20:12.3988840Z        mattermost.usertermsofservice          0          0                     0.395s
+migrate	Migrate and verify	2026-11-10T20:20:12.3989190Z          mattermost.useraccesstokens          0          0                     0.399s
+migrate	Migrate and verify	2026-11-10T20:20:12.3989530Z            mattermost.uploadsessions          0          0                     0.381s
+migrate	Migrate and verify	2026-11-10T20:20:12.3989870Z ------------------------------------  ---------  ---------  ---------  --------------
+migrate	Migrate and verify	2026-11-10T20:20:12.3990210Z              COPY Threads Completion          0          8                     0.478s
+migrate	Migrate and verify	2026-11-10T20:20:12.3990630Z                      Reset Sequences          0          0                     0.024s
+migrate	Migrate and verify	2026-11-10T20:20:12.3990950Z                  Create Foreign Keys          0          2                     0.002s
+migrate	Migrate and verify	2026-11-10T20:20:12.3991250Z                      Set Search Path          0          1                     0.000s
+migrate	Migrate and verify	2026-11-10T20:20:12.3991550Z                     Install Comments          0          0                     0.000s
+migrate	Migrate and verify	2026-11-10T20:20:12.3991840Z                           after load          0          4                     0.021s
+migrate	Migrate and verify	2026-11-10T20:20:12.3992140Z ------------------------------------  ---------  ---------  ---------  --------------
+migrate	Migrate and verify	2026-11-10T20:20:12.3992460Z                    Total import time          ✓        142    34.2 kB          0.525s
+migrate	Migrate and verify	2026-11-10T20:20:12.5424150Z ALTER ROLE
+migrate	Migrate and verify	2026-11-10T20:20:12.7201960Z 2026-11-10 20:20:12 running migrations..
+migrate	Migrate and verify	2026-11-10T20:20:12.7202640Z 2026-11-10 20:20:12 applying create_idx_fileinfo_content_txt.sql
+migrate	Migrate and verify	2026-11-10T20:20:12.7223590Z 2026-11-10 20:20:12 applying create_idx_posts_message_txt.sql
+migrate	Migrate and verify	2026-11-10T20:20:12.7232320Z 2026-11-10 20:20:12 indexes created.
+migrate	Migrate and verify	2026-11-10T20:20:12.9313630Z  Image mattermost/mattermost-team-edition:12.0.1 Pulling 
+migrate	Migrate and verify	2026-11-10T20:20:15.7686070Z  7c12895b777b Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7686580Z  4f4fb700ef54 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7686990Z  4f4fb700ef54 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7687340Z  2780920e5dbf Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7687680Z  3214acf345c0 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7688020Z  52630fc75a18 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7688350Z  bf7a4185f015 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7688700Z  dd64bf2dd177 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7689110Z  b839dfae01f6 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7689710Z  a5789fc40e82 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7690130Z  9f316365a5ed Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7690510Z  dcaa5a89b0cc Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7690860Z  990a9c434e5e Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7691210Z  4f4fb700ef54 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7691680Z  39dc083afc39 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7692050Z  96ed2737ae31 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7694410Z  235c3625d753 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7694910Z  dc0fb75e565a Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7696570Z  a3a8f38e628a Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7697040Z  b779afa61e16 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7697610Z  58f495cca0bc Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7697990Z  30b8356d02f6 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7698360Z  d3dcad2cf024 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7698720Z  4f4fb700ef54 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7699060Z  4f4fb700ef54 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7699430Z  4f4fb700ef54 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7699760Z  04fb2c7e581e Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7702570Z  6a64a932933e Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7702930Z  4f4fb700ef54 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7703270Z  5a571ee4fd71 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.7703610Z  c48b6fe1ff85 Pulling fs layer 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.8354990Z  7c12895b777b Already exists 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.8355310Z  990a9c434e5e Already exists 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.8358040Z  4f4fb700ef54 Already exists 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.8358350Z  39dc083afc39 Already exists 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.8359870Z  3214acf345c0 Already exists 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.8361360Z  b839dfae01f6 Already exists 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.8364160Z  bf7a4185f015 Already exists 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.8365260Z  2780920e5dbf Already exists 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.8365540Z  52630fc75a18 Already exists 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.8368230Z  dd64bf2dd177 Already exists 0B
+migrate	Migrate and verify	2026-11-10T20:20:15.8369790Z  dcaa5a89b0cc Already exists 0B
+migrate	Migrate and verify	2026-11-10T20:20:16.0350560Z  b779afa61e16 Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:16.0350970Z  a5789fc40e82 Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:16.0439610Z  a5789fc40e82 Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:16.1474410Z  a5789fc40e82 Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:16.2348700Z  9f316365a5ed Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:16.2349160Z  58f495cca0bc Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:16.2352780Z  30b8356d02f6 Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:16.2353120Z  d3dcad2cf024 Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:16.2442260Z  a5789fc40e82 Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:16.3459840Z  a5789fc40e82 Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:16.4347450Z  c48b6fe1ff85 Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:16.4347800Z  5a571ee4fd71 Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:16.4349020Z  dc0fb75e565a Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:16.4350930Z  a3a8f38e628a Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:16.4351250Z  04fb2c7e581e Downloading 1.049MB
+migrate	Migrate and verify	2026-11-10T20:20:16.4352910Z  96ed2737ae31 Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:16.4358100Z  235c3625d753 Downloading 1.049MB
+migrate	Migrate and verify	2026-11-10T20:20:16.4358330Z  6a64a932933e Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:16.4437560Z  a5789fc40e82 Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:16.5354970Z  04fb2c7e581e Downloading 3.146MB
+migrate	Migrate and verify	2026-11-10T20:20:16.5355620Z  235c3625d753 Downloading 3.146MB
+migrate	Migrate and verify	2026-11-10T20:20:16.5480140Z  a5789fc40e82 Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:16.6375870Z  04fb2c7e581e Downloading 5.243MB
+migrate	Migrate and verify	2026-11-10T20:20:16.6376250Z  235c3625d753 Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:16.6470870Z  a5789fc40e82 Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:16.7357650Z  04fb2c7e581e Downloading 9.437MB
+migrate	Migrate and verify	2026-11-10T20:20:16.7511890Z  a5789fc40e82 Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:16.8344660Z  04fb2c7e581e Downloading 14.68MB
+migrate	Migrate and verify	2026-11-10T20:20:16.8442600Z  a5789fc40e82 Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:16.9353440Z  04fb2c7e581e Downloading 15.73MB
+migrate	Migrate and verify	2026-11-10T20:20:16.9489110Z  a5789fc40e82 Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:17.0363240Z  04fb2c7e581e Downloading 20.97MB
+migrate	Migrate and verify	2026-11-10T20:20:17.0596500Z  a5789fc40e82 Extracting 2B
+migrate	Migrate and verify	2026-11-10T20:20:17.1355210Z  04fb2c7e581e Downloading 26.21MB
+migrate	Migrate and verify	2026-11-10T20:20:17.1438440Z  a5789fc40e82 Extracting 2B
+migrate	Migrate and verify	2026-11-10T20:20:17.2361590Z  04fb2c7e581e Downloading 29.36MB
+migrate	Migrate and verify	2026-11-10T20:20:17.2494820Z  a5789fc40e82 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.3343000Z  04fb2c7e581e Downloading 32.51MB
+migrate	Migrate and verify	2026-11-10T20:20:17.3343740Z  44136fa355b3 Already exists 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.3358020Z  7c12895b777b Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.3367070Z  990a9c434e5e Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.3380870Z  39dc083afc39 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.3386180Z  3214acf345c0 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.3396170Z  bf7a4185f015 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.3411470Z  2780920e5dbf Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.3417270Z  52630fc75a18 Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:17.4363070Z  04fb2c7e581e Downloading 34.6MB
+migrate	Migrate and verify	2026-11-10T20:20:17.4393190Z  b839dfae01f6 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.4414250Z  52630fc75a18 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.4494120Z  dd64bf2dd177 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.4508240Z  dcaa5a89b0cc Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.4630090Z  dc0fb75e565a Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.4638940Z  a3a8f38e628a Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.4647830Z  96ed2737ae31 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.4665900Z  235c3625d753 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.5345280Z  04fb2c7e581e Downloading 40.89MB
+migrate	Migrate and verify	2026-11-10T20:20:17.5345560Z  a01f99b9d0fd Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.5352170Z  4f4fb700ef54 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.5357070Z  b779afa61e16 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.5362810Z  9f316365a5ed Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.5368610Z  58f495cca0bc Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.5376930Z  30b8356d02f6 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.5386560Z  d3dcad2cf024 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.5391830Z  c48b6fe1ff85 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.5396810Z  5a571ee4fd71 Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:17.6351400Z  04fb2c7e581e Downloading 47.19MB
+migrate	Migrate and verify	2026-11-10T20:20:17.7352460Z  04fb2c7e581e Downloading 47.19MB
+migrate	Migrate and verify	2026-11-10T20:20:17.8351740Z  04fb2c7e581e Downloading 53.01MB
+migrate	Migrate and verify	2026-11-10T20:20:17.9350580Z  04fb2c7e581e Downloading 58.72MB
+migrate	Migrate and verify	2026-11-10T20:20:18.0352160Z  04fb2c7e581e Downloading 58.72MB
+migrate	Migrate and verify	2026-11-10T20:20:18.1350270Z  04fb2c7e581e Downloading 66.06MB
+migrate	Migrate and verify	2026-11-10T20:20:18.2351310Z  04fb2c7e581e Downloading 66.06MB
+migrate	Migrate and verify	2026-11-10T20:20:18.3347190Z  04fb2c7e581e Downloading 72.35MB
+migrate	Migrate and verify	2026-11-10T20:20:18.4353630Z  04fb2c7e581e Downloading 79.69MB
+migrate	Migrate and verify	2026-11-10T20:20:18.5353920Z  04fb2c7e581e Downloading 83.89MB
+migrate	Migrate and verify	2026-11-10T20:20:18.6352520Z  04fb2c7e581e Downloading 89.13MB
+migrate	Migrate and verify	2026-11-10T20:20:18.7352160Z  04fb2c7e581e Downloading 92.27MB
+migrate	Migrate and verify	2026-11-10T20:20:18.8351860Z  04fb2c7e581e Downloading 96.47MB
+migrate	Migrate and verify	2026-11-10T20:20:18.9358320Z  04fb2c7e581e Downloading 100.4MB
+migrate	Migrate and verify	2026-11-10T20:20:19.0364180Z  04fb2c7e581e Downloading 104.9MB
+migrate	Migrate and verify	2026-11-10T20:20:19.1360210Z  04fb2c7e581e Downloading 105.9MB
+migrate	Migrate and verify	2026-11-10T20:20:19.2347710Z  04fb2c7e581e Downloading 113.2MB
+migrate	Migrate and verify	2026-11-10T20:20:19.3363010Z  04fb2c7e581e Downloading 113.2MB
+migrate	Migrate and verify	2026-11-10T20:20:19.4379290Z  04fb2c7e581e Downloading 113.2MB
+migrate	Migrate and verify	2026-11-10T20:20:19.5457640Z  04fb2c7e581e Downloading 113.2MB
+migrate	Migrate and verify	2026-11-10T20:20:19.6372660Z  04fb2c7e581e Downloading 114.7MB
+migrate	Migrate and verify	2026-11-10T20:20:19.7344470Z  04fb2c7e581e Downloading 120.6MB
+migrate	Migrate and verify	2026-11-10T20:20:19.8351840Z  04fb2c7e581e Downloading 123.7MB
+migrate	Migrate and verify	2026-11-10T20:20:19.9344110Z  04fb2c7e581e Downloading 129MB
+migrate	Migrate and verify	2026-11-10T20:20:20.0350200Z  04fb2c7e581e Downloading 136.3MB
+migrate	Migrate and verify	2026-11-10T20:20:20.1348840Z  04fb2c7e581e Downloading 142.6MB
+migrate	Migrate and verify	2026-11-10T20:20:20.2353420Z  04fb2c7e581e Downloading 145.8MB
+migrate	Migrate and verify	2026-11-10T20:20:20.3358280Z  04fb2c7e581e Downloading 148.9MB
+migrate	Migrate and verify	2026-11-10T20:20:20.4341680Z  04fb2c7e581e Downloading 155.2MB
+migrate	Migrate and verify	2026-11-10T20:20:20.5347410Z  04fb2c7e581e Downloading 157.3MB
+migrate	Migrate and verify	2026-11-10T20:20:20.6365070Z  04fb2c7e581e Downloading 161.5MB
+migrate	Migrate and verify	2026-11-10T20:20:20.7343910Z  04fb2c7e581e Downloading 166.7MB
+migrate	Migrate and verify	2026-11-10T20:20:20.8387620Z  04fb2c7e581e Downloading 167.8MB
+migrate	Migrate and verify	2026-11-10T20:20:20.9373330Z  04fb2c7e581e Downloading 168.8MB
+migrate	Migrate and verify	2026-11-10T20:20:21.0355270Z  04fb2c7e581e Downloading 175.7MB
+migrate	Migrate and verify	2026-11-10T20:20:21.1348160Z  04fb2c7e581e Downloading 178.3MB
+migrate	Migrate and verify	2026-11-10T20:20:21.2358590Z  04fb2c7e581e Downloading 186.6MB
+migrate	Migrate and verify	2026-11-10T20:20:21.3361360Z  04fb2c7e581e Downloading 189.8MB
+migrate	Migrate and verify	2026-11-10T20:20:21.4364860Z  04fb2c7e581e Downloading 195MB
+migrate	Migrate and verify	2026-11-10T20:20:21.5349890Z  04fb2c7e581e Downloading 199.2MB
+migrate	Migrate and verify	2026-11-10T20:20:21.6362970Z  04fb2c7e581e Downloading 202.4MB
+migrate	Migrate and verify	2026-11-10T20:20:21.7359030Z  04fb2c7e581e Downloading 202.4MB
+migrate	Migrate and verify	2026-11-10T20:20:21.8353430Z  04fb2c7e581e Downloading 210.8MB
+migrate	Migrate and verify	2026-11-10T20:20:21.9367730Z  04fb2c7e581e Downloading 212.9MB
+migrate	Migrate and verify	2026-11-10T20:20:22.0349870Z  04fb2c7e581e Downloading 218.1MB
+migrate	Migrate and verify	2026-11-10T20:20:22.1357910Z  04fb2c7e581e Downloading 218.2MB
+migrate	Migrate and verify	2026-11-10T20:20:22.2360210Z  04fb2c7e581e Downloading 224.4MB
+migrate	Migrate and verify	2026-11-10T20:20:22.3353550Z  04fb2c7e581e Downloading 229MB
+migrate	Migrate and verify	2026-11-10T20:20:22.4345770Z  04fb2c7e581e Downloading 232.8MB
+migrate	Migrate and verify	2026-11-10T20:20:22.5358790Z  04fb2c7e581e Downloading 237MB
+migrate	Migrate and verify	2026-11-10T20:20:22.6356490Z  04fb2c7e581e Downloading 242.2MB
+migrate	Migrate and verify	2026-11-10T20:20:22.7348980Z  04fb2c7e581e Downloading 247.5MB
+migrate	Migrate and verify	2026-11-10T20:20:22.8352720Z  04fb2c7e581e Downloading 252.7MB
+migrate	Migrate and verify	2026-11-10T20:20:22.9353530Z  04fb2c7e581e Downloading 252.7MB
+migrate	Migrate and verify	2026-11-10T20:20:23.0355110Z  04fb2c7e581e Downloading 261.1MB
+migrate	Migrate and verify	2026-11-10T20:20:23.1346120Z  04fb2c7e581e Downloading 267.4MB
+migrate	Migrate and verify	2026-11-10T20:20:23.2346210Z  04fb2c7e581e Downloading 273.7MB
+migrate	Migrate and verify	2026-11-10T20:20:23.3344760Z  04fb2c7e581e Downloading 273.7MB
+migrate	Migrate and verify	2026-11-10T20:20:23.4344250Z  04fb2c7e581e Downloading 280MB
+migrate	Migrate and verify	2026-11-10T20:20:23.5340450Z  04fb2c7e581e Downloading 285.2MB
+migrate	Migrate and verify	2026-11-10T20:20:23.6347670Z  04fb2c7e581e Downloading 291.5MB
+migrate	Migrate and verify	2026-11-10T20:20:23.7338730Z  04fb2c7e581e Downloading 295.7MB
+migrate	Migrate and verify	2026-11-10T20:20:23.8352260Z  04fb2c7e581e Downloading 295.7MB
+migrate	Migrate and verify	2026-11-10T20:20:23.9365780Z  04fb2c7e581e Downloading 304.1MB
+migrate	Migrate and verify	2026-11-10T20:20:24.0351310Z  04fb2c7e581e Downloading 307.2MB
+migrate	Migrate and verify	2026-11-10T20:20:24.1351900Z  04fb2c7e581e Downloading 309.3MB
+migrate	Migrate and verify	2026-11-10T20:20:24.2349590Z  04fb2c7e581e Downloading 315.6MB
+migrate	Migrate and verify	2026-11-10T20:20:24.3343850Z  04fb2c7e581e Downloading 318.8MB
+migrate	Migrate and verify	2026-11-10T20:20:24.4350910Z  04fb2c7e581e Downloading 326.1MB
+migrate	Migrate and verify	2026-11-10T20:20:24.5354160Z  04fb2c7e581e Downloading 326.1MB
+migrate	Migrate and verify	2026-11-10T20:20:24.6352750Z  04fb2c7e581e Downloading 329.3MB
+migrate	Migrate and verify	2026-11-10T20:20:24.7350700Z  04fb2c7e581e Downloading 337.6MB
+migrate	Migrate and verify	2026-11-10T20:20:24.8347020Z  04fb2c7e581e Downloading 343.9MB
+migrate	Migrate and verify	2026-11-10T20:20:24.9349420Z  04fb2c7e581e Downloading 350.2MB
+migrate	Migrate and verify	2026-11-10T20:20:25.0351640Z  04fb2c7e581e Downloading 351.3MB
+migrate	Migrate and verify	2026-11-10T20:20:25.1343320Z  04fb2c7e581e Downloading 354.4MB
+migrate	Migrate and verify	2026-11-10T20:20:25.2354850Z  04fb2c7e581e Downloading 357.6MB
+migrate	Migrate and verify	2026-11-10T20:20:25.3346290Z  04fb2c7e581e Downloading 364.9MB
+migrate	Migrate and verify	2026-11-10T20:20:25.4368410Z  04fb2c7e581e Downloading 367MB
+migrate	Migrate and verify	2026-11-10T20:20:25.5387100Z  04fb2c7e581e Downloading 367MB
+migrate	Migrate and verify	2026-11-10T20:20:25.6353840Z  04fb2c7e581e Downloading 371.2MB
+migrate	Migrate and verify	2026-11-10T20:20:25.7359540Z  04fb2c7e581e Downloading 376.4MB
+migrate	Migrate and verify	2026-11-10T20:20:25.8357510Z  04fb2c7e581e Downloading 377.5MB
+migrate	Migrate and verify	2026-11-10T20:20:25.9344350Z  04fb2c7e581e Downloading 386.9MB
+migrate	Migrate and verify	2026-11-10T20:20:26.0350360Z  04fb2c7e581e Downloading 386.9MB
+migrate	Migrate and verify	2026-11-10T20:20:26.1369580Z  04fb2c7e581e Downloading 388MB
+migrate	Migrate and verify	2026-11-10T20:20:26.2355680Z  04fb2c7e581e Downloading 396.4MB
+migrate	Migrate and verify	2026-11-10T20:20:26.3354970Z  04fb2c7e581e Downloading 401.6MB
+migrate	Migrate and verify	2026-11-10T20:20:26.4345820Z  04fb2c7e581e Downloading 408.9MB
+migrate	Migrate and verify	2026-11-10T20:20:26.5365230Z  04fb2c7e581e Downloading 412.1MB
+migrate	Migrate and verify	2026-11-10T20:20:26.6355160Z  04fb2c7e581e Downloading 412.1MB
+migrate	Migrate and verify	2026-11-10T20:20:26.7348630Z  04fb2c7e581e Downloading 421.5MB
+migrate	Migrate and verify	2026-11-10T20:20:26.8350930Z  04fb2c7e581e Downloading 426.8MB
+migrate	Migrate and verify	2026-11-10T20:20:26.9334980Z  04fb2c7e581e Downloading 434.1MB
+migrate	Migrate and verify	2026-11-10T20:20:27.0363210Z  04fb2c7e581e Downloading 434.1MB
+migrate	Migrate and verify	2026-11-10T20:20:27.1344380Z  04fb2c7e581e Downloading 440.4MB
+migrate	Migrate and verify	2026-11-10T20:20:27.2344870Z  04fb2c7e581e Downloading 443.5MB
+migrate	Migrate and verify	2026-11-10T20:20:27.3341620Z  04fb2c7e581e Downloading 449.8MB
+migrate	Migrate and verify	2026-11-10T20:20:27.4354660Z  04fb2c7e581e Downloading 454.8MB
+migrate	Migrate and verify	2026-11-10T20:20:27.5353260Z  04fb2c7e581e Downloading 456.1MB
+migrate	Migrate and verify	2026-11-10T20:20:27.6351040Z  04fb2c7e581e Downloading 460.3MB
+migrate	Migrate and verify	2026-11-10T20:20:27.7346150Z  04fb2c7e581e Downloading 467.7MB
+migrate	Migrate and verify	2026-11-10T20:20:27.8340820Z  04fb2c7e581e Downloading 468.7MB
+migrate	Migrate and verify	2026-11-10T20:20:27.9346420Z  04fb2c7e581e Downloading 477.1MB
+migrate	Migrate and verify	2026-11-10T20:20:28.0332280Z  04fb2c7e581e Downloading 480.2MB
+migrate	Migrate and verify	2026-11-10T20:20:28.1337540Z  04fb2c7e581e Downloading 484.4MB
+migrate	Migrate and verify	2026-11-10T20:20:28.2349710Z  04fb2c7e581e Downloading 484.4MB
+migrate	Migrate and verify	2026-11-10T20:20:28.3348980Z  04fb2c7e581e Downloading 487.8MB
+migrate	Migrate and verify	2026-11-10T20:20:28.4344930Z  04fb2c7e581e Downloading 493.9MB
+migrate	Migrate and verify	2026-11-10T20:20:28.5355570Z  04fb2c7e581e Downloading 496.4MB
+migrate	Migrate and verify	2026-11-10T20:20:28.6371320Z  04fb2c7e581e Downloading 496.4MB
+migrate	Migrate and verify	2026-11-10T20:20:28.7346370Z  04fb2c7e581e Downloading 496.4MB
+migrate	Migrate and verify	2026-11-10T20:20:28.8337640Z  04fb2c7e581e Downloading 496.4MB
+migrate	Migrate and verify	2026-11-10T20:20:28.9339310Z  04fb2c7e581e Download complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:28.9361070Z  04fb2c7e581e Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:29.0355910Z  04fb2c7e581e Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:29.1366620Z  04fb2c7e581e Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:29.2361510Z  04fb2c7e581e Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:29.3353980Z  04fb2c7e581e Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:29.4355980Z  04fb2c7e581e Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:29.5362000Z  04fb2c7e581e Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:29.6376030Z  04fb2c7e581e Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:29.7357170Z  04fb2c7e581e Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:29.8355870Z  04fb2c7e581e Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:29.9359340Z  04fb2c7e581e Extracting 1B
+migrate	Migrate and verify	2026-11-10T20:20:30.0356380Z  04fb2c7e581e Extracting 2B
+migrate	Migrate and verify	2026-11-10T20:20:30.1371890Z  04fb2c7e581e Extracting 2B
+migrate	Migrate and verify	2026-11-10T20:20:30.2355540Z  04fb2c7e581e Extracting 2B
+migrate	Migrate and verify	2026-11-10T20:20:30.3360380Z  04fb2c7e581e Extracting 2B
+migrate	Migrate and verify	2026-11-10T20:20:30.4358250Z  04fb2c7e581e Extracting 2B
+migrate	Migrate and verify	2026-11-10T20:20:30.5361430Z  04fb2c7e581e Extracting 2B
+migrate	Migrate and verify	2026-11-10T20:20:30.6360560Z  04fb2c7e581e Extracting 2B
+migrate	Migrate and verify	2026-11-10T20:20:30.6604100Z  6a64a932933e Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:30.6608160Z  04fb2c7e581e Pull complete 0B
+migrate	Migrate and verify	2026-11-10T20:20:30.6613040Z  Image mattermost/mattermost-team-edition:12.0.1 Pulled 
+migrate	Migrate and verify	2026-11-10T20:20:30.7034740Z  Container shvedov-mm-postgres-1 Running 
+migrate	Migrate and verify	2026-11-10T20:20:30.7044830Z  Container shvedov-mm-mysql-1 Stopping 
+migrate	Migrate and verify	2026-11-10T20:20:30.7063840Z  Container shvedov-mm-mattermost-1 Recreate 
+migrate	Migrate and verify	2026-11-10T20:20:30.9940820Z  Container shvedov-mm-mattermost-1 Recreated 
+migrate	Migrate and verify	2026-11-10T20:20:31.6453530Z  Container shvedov-mm-mysql-1 Stopped 
+migrate	Migrate and verify	2026-11-10T20:20:31.6453840Z  Container shvedov-mm-mysql-1 Removing 
+migrate	Migrate and verify	2026-11-10T20:20:31.6678360Z  Container shvedov-mm-mysql-1 Removed 
+migrate	Migrate and verify	2026-11-10T20:20:31.6678720Z  Container shvedov-mm-postgres-1 Waiting 
+migrate	Migrate and verify	2026-11-10T20:20:31.6684900Z  Container shvedov-mm-postgres-1 Healthy 
+migrate	Migrate and verify	2026-11-10T20:20:31.6685170Z  Container shvedov-mm-mattermost-1 Starting 
+migrate	Migrate and verify	2026-11-10T20:20:31.7585310Z  Container shvedov-mm-mattermost-1 Started 
+migrate	Migrate and verify	2026-11-10T20:20:37.8980290Z Migration verified; marker committed
+migrate	Migrate and verify	2026-11-10T20:20:37.9835940Z NAME                      IMAGE                                       COMMAND                  SERVICE      CREATED         STATUS                            PORTS
+migrate	Migrate and verify	2026-11-10T20:20:37.9842860Z shvedov-mm-mattermost-1   mattermost/mattermost-team-edition:12.0.1   "/mattermost/bin/mat…"   mattermost   7 seconds ago   Up 6 seconds (health: starting)   8067/tcp, 127.0.0.1:8065->8065/tcp, 8074/tcp
+migrate	Migrate and verify	2026-11-10T20:20:37.9843870Z shvedov-mm-postgres-1     postgres:15-alpine                          "docker-entrypoint.s…"   postgres     4 minutes ago   Up 4 minutes (healthy)            5432/tcp
+migrate	Post Run actions/checkout@v4	﻿2026-11-10T20:20:38.0044760Z Post job cleanup.
+migrate	Post Run actions/checkout@v4	2026-11-10T20:20:38.2859030Z [command]/usr/bin/git version
+migrate	Post Run actions/checkout@v4	2026-11-10T20:20:38.3092570Z git version 2.50.1 (Apple Git-155)
+migrate	Post Run actions/checkout@v4	2026-11-10T20:20:38.3109810Z Copying '/Users/meddyyyy/.gitconfig' to '/Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/_temp/41e65e2b-ec26-4f6e-b0f0-13910e26455a/.gitconfig'
+migrate	Post Run actions/checkout@v4	2026-11-10T20:20:38.3114560Z Temporarily overriding HOME='/Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/_temp/41e65e2b-ec26-4f6e-b0f0-13910e26455a' before making global git config changes
+migrate	Post Run actions/checkout@v4	2026-11-10T20:20:38.3115400Z Adding repository directory to the temporary git global config as a safe directory
+migrate	Post Run actions/checkout@v4	2026-11-10T20:20:38.3117810Z [command]/usr/bin/git config --global --add safe.directory /Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/my-first-devops-repo/my-first-devops-repo
+migrate	Post Run actions/checkout@v4	2026-11-10T20:20:38.3287910Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+migrate	Post Run actions/checkout@v4	2026-11-10T20:20:38.3446670Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+migrate	Post Run actions/checkout@v4	2026-11-10T20:20:38.4202540Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+migrate	Post Run actions/checkout@v4	2026-11-10T20:20:38.4316020Z http.https://github.com/.extraheader
+migrate	Post Run actions/checkout@v4	2026-11-10T20:20:38.4321900Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+migrate	Post Run actions/checkout@v4	2026-11-10T20:20:38.4444730Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+migrate	Post Run actions/checkout@v4	2026-11-10T20:20:38.5111780Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+migrate	Post Run actions/checkout@v4	2026-11-10T20:20:38.5239780Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+migrate	Complete job	﻿2026-11-10T20:20:38.6033090Z Cleaning up orphan processes
+migrate	Complete job	2026-11-10T20:20:38.9942520Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

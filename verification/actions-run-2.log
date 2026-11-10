@@ -1,0 +1,159 @@
+migrate	Set up job	﻿2026-11-10T20:21:03.9818530Z Current runner version: '2.338.2'
+migrate	Set up job	2026-11-10T20:21:03.9823620Z Runner name: 'shvedov-devops-temporary'
+migrate	Set up job	2026-11-10T20:21:03.9824070Z Runner group name: 'Default'
+migrate	Set up job	2026-11-10T20:21:03.9824680Z Machine name: 'MacBook-Air-Andrej'
+migrate	Set up job	2026-11-10T20:21:03.9826900Z ##[group]GITHUB_TOKEN Permissions
+migrate	Set up job	2026-11-10T20:21:03.9828100Z Contents: read
+migrate	Set up job	2026-11-10T20:21:03.9828410Z Metadata: read
+migrate	Set up job	2026-11-10T20:21:03.9828730Z ##[endgroup]
+migrate	Set up job	2026-11-10T20:21:03.9829750Z Secret source: Actions
+migrate	Set up job	2026-11-10T20:21:03.9830280Z Cache mode: write
+migrate	Set up job	2026-11-10T20:21:03.9830660Z Prepare workflow directory
+migrate	Set up job	2026-11-10T20:21:04.0345120Z Prepare all required actions
+migrate	Set up job	2026-11-10T20:21:04.0372130Z Getting action download info
+migrate	Set up job	2026-11-10T20:21:04.7767210Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+migrate	Set up job	2026-11-10T20:21:05.6904660Z Complete job name: migrate
+migrate	Run actions/checkout@v4	﻿2026-11-10T20:21:05.7296160Z ##[group]Run actions/checkout@v4
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7296490Z with:
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7296660Z   repository: Meddyyyy0/my-first-devops-repo
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7298340Z   token: ***
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7298490Z   ssh-strict: true
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7298640Z   ssh-user: git
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7298800Z   persist-credentials: true
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7298970Z   clean: true
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7299140Z   sparse-checkout-cone-mode: true
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7299330Z   fetch-depth: 1
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7299490Z   fetch-tags: false
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7299660Z   show-progress: true
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7299830Z   lfs: false
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7299980Z   submodules: false
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7300140Z   set-safe-directory: true
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7300320Z   allow-unsafe-pr-checkout: false
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7300580Z env:
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7300780Z   DB_MYSQL_ROOT_PASSWORD: ***
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7301000Z   DB_MYSQL_PASSWORD: ***
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7301220Z   DB_POSTGRES_PASSWORD: ***
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7301800Z   STATE_DIR: /Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/my-first-devops-repo/my-first-devops-repo/../.shvedov-mattermost-state
+migrate	Run actions/checkout@v4	2026-11-10T20:21:05.7302370Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0026760Z Syncing repository: Meddyyyy0/my-first-devops-repo
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0028020Z ##[group]Getting Git version info
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0028680Z Working directory is '/Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/my-first-devops-repo/my-first-devops-repo'
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0029460Z [command]/usr/bin/git version
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0176600Z git version 2.50.1 (Apple Git-155)
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0185330Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0190070Z Copying '/Users/meddyyyy/.gitconfig' to '/Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/_temp/bef12fa7-4833-412c-94de-ae51f95dccde/.gitconfig'
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0194930Z Temporarily overriding HOME='/Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/_temp/bef12fa7-4833-412c-94de-ae51f95dccde' before making global git config changes
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0195920Z Adding repository directory to the temporary git global config as a safe directory
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0198030Z [command]/usr/bin/git config --global --add safe.directory /Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/my-first-devops-repo/my-first-devops-repo
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0339100Z [command]/usr/bin/git config --local --get remote.origin.url
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0471780Z https://github.com/Meddyyyy0/my-first-devops-repo
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0479600Z ##[group]Removing previously created refs, to avoid conflicts
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0481920Z [command]/usr/bin/git rev-parse --symbolic-full-name --verify --quiet HEAD
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0617010Z refs/heads/migration
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0622940Z [command]/usr/bin/git checkout --detach
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0802080Z HEAD is now at 5f66941 Use official pgloader with Rosetta and stop on transfer errors
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.0995150Z [command]/usr/bin/git branch --delete --force migration
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.1141330Z Deleted branch migration (was 5f66941).
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.1329080Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.1333580Z [command]/usr/bin/git submodule status
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.2234180Z ##[group]Cleaning the repository
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.2236860Z [command]/usr/bin/git clean -ffdx
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.2386500Z Removing backups/
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.2391890Z [command]/usr/bin/git reset --hard HEAD
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.2618760Z HEAD is now at 5f66941 Use official pgloader with Rosetta and stop on transfer errors
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.2641840Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.2643290Z ##[group]Disabling automatic garbage collection
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.2643640Z [command]/usr/bin/git config --local gc.auto 0
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.2831920Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.2832340Z ##[group]Setting up auth
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.2833690Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.2993310Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.3910550Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.4058050Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.4925480Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.5052200Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.5793500Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.5936330Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.5936770Z ##[group]Fetching the repository
+migrate	Run actions/checkout@v4	2026-11-10T20:21:06.5940470Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +fef61caa5357d895715d154bae73bb8d3a68ed71:refs/remotes/origin/migration
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2051700Z From https://github.com/Meddyyyy0/my-first-devops-repo
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2052560Z  + 5f66941...fef61ca fef61caa5357d895715d154bae73bb8d3a68ed71 -> origin/migration  (forced update)
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2135290Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2135950Z ##[group]Determining the checkout info
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2136570Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2141090Z [command]/usr/bin/git sparse-checkout disable
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2330770Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2512050Z ##[group]Checking out the ref
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2516530Z [command]/usr/bin/git checkout --progress --force -B migration refs/remotes/origin/migration
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2675120Z Warning: you are leaving 1 commit behind, not connected to
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2676270Z any of your branches:
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2676620Z 
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2677070Z   5f66941 Use official pgloader with Rosetta and stop on transfer errors
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2677900Z 
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2678340Z If you want to keep it by creating a new branch, this may be a good time
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2678930Z to do so with:
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2679090Z 
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2679250Z  git branch <new-branch-name> 5f66941
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2679490Z 
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2706720Z Switched to a new branch 'migration'
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2712180Z branch 'migration' set up to track 'origin/migration'.
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2716340Z ##[endgroup]
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.2881410Z [command]/usr/bin/git log -1 --format=%H
+migrate	Run actions/checkout@v4	2026-11-10T20:21:07.3015810Z fef61caa5357d895715d154bae73bb8d3a68ed71
+migrate	Build official Mattermost migration tools	﻿2026-11-10T20:21:07.3159040Z ##[group]Run docker build --platform linux/amd64 -t shvedov-migration-tools:1.0 tools/migration
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3159740Z ^[[36;1mdocker build --platform linux/amd64 -t shvedov-migration-tools:1.0 tools/migration^[[0m
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3171350Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3171600Z env:
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3171900Z   DB_MYSQL_ROOT_PASSWORD: ***
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3172140Z   DB_MYSQL_PASSWORD: ***
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3172350Z   DB_POSTGRES_PASSWORD: ***
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3172910Z   STATE_DIR: /Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/my-first-devops-repo/my-first-devops-repo/../.shvedov-mattermost-state
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3173570Z ##[endgroup]
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3745750Z DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3746520Z             Install the buildx component to build images with BuildKit:
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3746960Z             https://docs.docker.com/go/buildx/
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3747210Z 
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3772860Z Sending build context to Docker daemon  2.048kB
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3773220Z 
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3778370Z Step 1/3 : ARG PGLOADER_BASE=mattermost/mattermost-pgloader:latest
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3778720Z Step 2/3 : FROM ${PGLOADER_BASE}
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3840340Z  ---> 6d513290a8e3
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3841010Z Step 3/3 : RUN go install github.com/mattermost/migration-assist/cmd/migration-assist@v0.0.2 && cp /go/bin/migration-assist /usr/local/bin/migration-assist
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3866840Z  ---> Using cache
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3867380Z  ---> a3319c202de4
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3872310Z Successfully built a3319c202de4
+migrate	Build official Mattermost migration tools	2026-11-10T20:21:07.3890890Z Successfully tagged shvedov-migration-tools:1.0
+migrate	Migrate and verify	﻿2026-11-10T20:21:07.3939050Z ##[group]Run bash scripts/migrate.sh
+migrate	Migrate and verify	2026-11-10T20:21:07.3939330Z ^[[36;1mbash scripts/migrate.sh^[[0m
+migrate	Migrate and verify	2026-11-10T20:21:07.3948840Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+migrate	Migrate and verify	2026-11-10T20:21:07.3949110Z env:
+migrate	Migrate and verify	2026-11-10T20:21:07.3949440Z   DB_MYSQL_ROOT_PASSWORD: ***
+migrate	Migrate and verify	2026-11-10T20:21:07.3949700Z   DB_MYSQL_PASSWORD: ***
+migrate	Migrate and verify	2026-11-10T20:21:07.3949910Z   DB_POSTGRES_PASSWORD: ***
+migrate	Migrate and verify	2026-11-10T20:21:07.3950460Z   STATE_DIR: /Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/my-first-devops-repo/my-first-devops-repo/../.shvedov-mattermost-state
+migrate	Migrate and verify	2026-11-10T20:21:07.3951030Z ##[endgroup]
+migrate	Migrate and verify	2026-11-10T20:21:07.4249960Z Migration already completed: skipping backup and pgloader
+migrate	Migrate and verify	2026-11-10T20:21:07.5027770Z  Container shvedov-mm-mattermost-1 Running 
+migrate	Migrate and verify	2026-11-10T20:21:07.5028440Z  Container shvedov-mm-postgres-1 Running 
+migrate	Migrate and verify	2026-11-10T20:21:07.5028780Z  Container shvedov-mm-postgres-1 Waiting 
+migrate	Migrate and verify	2026-11-10T20:21:07.5034020Z  Container shvedov-mm-postgres-1 Healthy 
+migrate	Migrate and verify	2026-11-10T20:21:07.5643760Z NAME                      IMAGE                                       COMMAND                  SERVICE      CREATED          STATUS                    PORTS
+migrate	Migrate and verify	2026-11-10T20:21:07.5644950Z shvedov-mm-mattermost-1   mattermost/mattermost-team-edition:12.0.1   "/mattermost/bin/mat…"   mattermost   37 seconds ago   Up 35 seconds (healthy)   8067/tcp, 127.0.0.1:8065->8065/tcp, 8074/tcp
+migrate	Migrate and verify	2026-11-10T20:21:07.5645930Z shvedov-mm-postgres-1     postgres:15-alpine                          "docker-entrypoint.s…"   postgres     4 minutes ago    Up 4 minutes (healthy)    5432/tcp
+migrate	Post Run actions/checkout@v4	﻿2026-11-10T20:21:07.5782440Z Post job cleanup.
+migrate	Post Run actions/checkout@v4	2026-11-10T20:21:07.6584500Z [command]/usr/bin/git version
+migrate	Post Run actions/checkout@v4	2026-11-10T20:21:07.6713270Z git version 2.50.1 (Apple Git-155)
+migrate	Post Run actions/checkout@v4	2026-11-10T20:21:07.6726310Z Copying '/Users/meddyyyy/.gitconfig' to '/Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/_temp/b275c5d4-91de-4ea8-ad6a-b21c0968681a/.gitconfig'
+migrate	Post Run actions/checkout@v4	2026-11-10T20:21:07.6730790Z Temporarily overriding HOME='/Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/_temp/b275c5d4-91de-4ea8-ad6a-b21c0968681a' before making global git config changes
+migrate	Post Run actions/checkout@v4	2026-11-10T20:21:07.6731610Z Adding repository directory to the temporary git global config as a safe directory
+migrate	Post Run actions/checkout@v4	2026-11-10T20:21:07.6733480Z [command]/usr/bin/git config --global --add safe.directory /Users/meddyyyy/Documents/Codex/2026-11-07/https-chatgpt-com-share-6aef8cae-9764/work/actions-runner/_work/my-first-devops-repo/my-first-devops-repo
+migrate	Post Run actions/checkout@v4	2026-11-10T20:21:07.6865060Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+migrate	Post Run actions/checkout@v4	2026-11-10T20:21:07.6984050Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+migrate	Post Run actions/checkout@v4	2026-11-10T20:21:07.7702200Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+migrate	Post Run actions/checkout@v4	2026-11-10T20:21:07.7827850Z http.https://github.com/.extraheader
+migrate	Post Run actions/checkout@v4	2026-11-10T20:21:07.7833480Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+migrate	Post Run actions/checkout@v4	2026-11-10T20:21:07.7959110Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+migrate	Post Run actions/checkout@v4	2026-11-10T20:21:07.8605400Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+migrate	Post Run actions/checkout@v4	2026-11-10T20:21:07.8726110Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+migrate	Complete job	﻿2026-11-10T20:21:07.9417580Z Cleaning up orphan processes
+migrate	Complete job	2026-11-10T20:21:08.1490140Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

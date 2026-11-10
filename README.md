@@ -5,7 +5,7 @@
 Legacy: Mattermost 9.5.0 + MySQL 8.0. Production: Mattermost 12.0.1 + PostgreSQL 15. В обоих стеках один именованный том файлов mm_data. Порт 8065 доступен только на localhost; порты БД не публикуются.
 
 ## Подготовка
-Нужны Docker, Compose и self-hosted runner Linux x86_64 для GitHub Actions. На Apple Silicon локальный стенд использует эмуляцию Mattermost x86_64 и нативный pgloader ARM.
+Нужны Docker, Compose и self-hosted runner Linux x86_64 или macOS Apple Silicon с Rosetta для GitHub Actions. На Apple Silicon используется Rosetta для Mattermost и официального pgloader x86_64.
 ```sh
 cp .env.example .env
 # Установить три разных тестовых пароля из букв, цифр, _ и -.
@@ -22,11 +22,12 @@ bash scripts/migrate.sh
 ```
 
 ## Apple Silicon
+В Docker-окружении должна быть включена Rosetta для linux/amd64. Образы Mattermost и официальный mattermost/mattermost-pgloader запускаются как x86_64.
 ```sh
-docker build -t shvedov-pgloader:arm64 tools/pgloader-arm64
-docker build --build-arg PGLOADER_BASE=shvedov-pgloader:arm64 -t shvedov-migration-tools:1.0 tools/migration
-PGLOADER_PLATFORM=linux/arm64 bash scripts/migrate.sh
+docker build --platform linux/amd64 -t shvedov-migration-tools:1.0 tools/migration
+bash scripts/migrate.sh
 ```
+Обычная QEMU-эмуляция старого Go-приложения на данном Mac оказалась несовместимой. Проверенный запуск использует Rosetta. Нативный Debian pgloader не применяется: его драйвер не распознаёт collation 76 в метаданных MySQL 8.
 
 ## Этапы
 1. Проверка флага и блокировка параллельного запуска.
@@ -54,3 +55,9 @@ PGLOADER_PLATFORM=linux/arm64 bash scripts/migrate.sh
 Не удалять MySQL volume shvedov_mm_mysql и backups. Если проверка не прошла, флаг не устанавливается. После исправления повторить скрипт: источник сохраняется, незавершённая целевая схема пересоздаётся. Для реальной эксплуатации нужна отдельная проверка плагинов и резервная копия всех томов; учебный стенд содержит только тестовые сообщения.
 
 Локальные .env, state, backups и LOCAL_ACCESS.txt не включать в Git или сдаваемый архив.
+
+## Подтверждённые запуски и демонстрация
+Два успешных запуска:
+https://github.com/Meddyyyy0/my-first-devops-repo/actions/runs/42893965458
+https://github.com/Meddyyyy0/my-first-devops-repo/actions/runs/42894403655
+После проверки временный runner удалён. История запусков сохранена. Для нового запуска Actions нужно снова подключить доверенный runner с меткой devops-lab-shvedov; локальные приложения продолжают работать без него.

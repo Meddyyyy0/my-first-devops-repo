@@ -1,0 +1,2 @@
+API verification: all 5 original private-channel messages preserved
+Attachment bytes and avatar SHA-256 match original; original account login successful
