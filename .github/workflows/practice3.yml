@@ -24,7 +24,9 @@ jobs:
       - name: Start application
         run: docker compose up -d --build --wait
       - name: Test application and database
-        run: python3 scripts/check.py
+        run: |
+          python3 scripts/check.py
+          node scripts/check-frontend.js
       - name: Save container logs
         if: always()
         run: |
