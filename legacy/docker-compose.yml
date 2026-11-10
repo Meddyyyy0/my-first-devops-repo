@@ -1,0 +1,41 @@
+services:
+  mattermost:
+    image: mattermost/mattermost-team-edition:9.5.0
+    platform: linux/amd64
+    ports: ["127.0.0.1:8065:8065"]
+    environment:
+      MM_SQLSETTINGS_DRIVERNAME: mysql
+      MM_SQLSETTINGS_DATASOURCE: mmuser:${DB_MYSQL_PASSWORD:?required}@tcp(mysql:3306)/mattermost?charset=utf8mb4,utf8&readTimeout=30s&writeTimeout=30s
+      MM_SERVICESETTINGS_SITEURL: http://localhost:8065
+      MM_SERVICESETTINGS_ENABLELOCALMODE: "true"
+    volumes:
+      - mm_data:/mattermost/data
+      - mm_logs:/mattermost/logs
+    networks: [mm_net]
+    depends_on:
+      mysql:
+        condition: service_healthy
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_MYSQL_ROOT_PASSWORD:?required}
+      MYSQL_DATABASE: mattermost
+      MYSQL_USER: mmuser
+      MYSQL_PASSWORD: ${DB_MYSQL_PASSWORD:?required}
+    command: ["--default-authentication-plugin=mysql_native_password", "--character-set-server=utf8mb4", "--collation-server=utf8mb4_general_ci"]
+    volumes: ["mysql_data:/var/lib/mysql"]
+    networks: [mm_net]
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=$$MYSQL_ROOT_PASSWORD mysqladmin ping -h localhost -u root --silent"]
+      interval: 5s
+      retries: 40
+volumes:
+  mm_data:
+    name: shvedov_mm_data
+  mm_logs:
+    name: shvedov_mm_logs
+  mysql_data:
+    name: shvedov_mm_mysql
+networks:
+  mm_net:
+    name: shvedov_mm_net

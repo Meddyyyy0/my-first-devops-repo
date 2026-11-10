@@ -1,0 +1,34 @@
+name: Idempotent Mattermost migration
+on:
+  push:
+    branches: [migration]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: shvedov-mattermost-migration
+  cancel-in-progress: false
+jobs:
+  migrate:
+    runs-on: [self-hosted, devops-lab-shvedov]
+    timeout-minutes: 40
+    env:
+      DB_MYSQL_ROOT_PASSWORD: ${{ secrets.DB_MYSQL_ROOT_PASSWORD }}
+      DB_MYSQL_PASSWORD: ${{ secrets.DB_MYSQL_PASSWORD }}
+      DB_POSTGRES_PASSWORD: ${{ secrets.DB_POSTGRES_PASSWORD }}
+      STATE_DIR: ${{ github.workspace }}/../.shvedov-mattermost-state
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build migration tools for runner architecture
+        shell: bash
+        run: |
+          if [ "$(uname -m)" = "arm64" ]; then
+            docker build -t shvedov-pgloader:arm64 tools/pgloader-arm64
+            docker build --build-arg PGLOADER_BASE=shvedov-pgloader:arm64 -t shvedov-migration-tools:1.0 tools/migration
+            echo "PGLOADER_PLATFORM=linux/arm64" >> "$GITHUB_ENV"
+          else
+            docker build -t shvedov-migration-tools:1.0 tools/migration
+          fi
+      - name: Migrate and verify
+        shell: bash
+        run: bash scripts/migrate.sh

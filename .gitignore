@@ -1,0 +1,5 @@
+.env
+state/
+backups/
+*.log
+LOCAL_ACCESS.txt
