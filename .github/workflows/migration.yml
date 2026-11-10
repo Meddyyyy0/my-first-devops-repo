@@ -19,16 +19,9 @@ jobs:
       STATE_DIR: ${{ github.workspace }}/../.shvedov-mattermost-state
     steps:
       - uses: actions/checkout@v4
-      - name: Build migration tools for runner architecture
+      - name: Build official Mattermost migration tools
         shell: bash
-        run: |
-          if [ "$(uname -m)" = "arm64" ]; then
-            docker build -t shvedov-pgloader:arm64 tools/pgloader-arm64
-            docker build --build-arg PGLOADER_BASE=shvedov-pgloader:arm64 -t shvedov-migration-tools:1.0 tools/migration
-            echo "PGLOADER_PLATFORM=linux/arm64" >> "$GITHUB_ENV"
-          else
-            docker build -t shvedov-migration-tools:1.0 tools/migration
-          fi
+        run: docker build --platform linux/amd64 -t shvedov-migration-tools:1.0 tools/migration
       - name: Migrate and verify
         shell: bash
         run: bash scripts/migrate.sh

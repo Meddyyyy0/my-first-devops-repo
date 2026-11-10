@@ -46,7 +46,7 @@ if [[ ! -f "$STATE_DIR/.migration_completed" ]]; then
   chmod 600 "$STATE_DIR/migration.load"
   docker run --rm --network shvedov_mm_net --platform "${PGLOADER_PLATFORM:-linux/amd64}" \
     -v "$STATE_DIR/migration.load:/home/migration/migration.load:ro" \
-    "${MIGRATION_IMAGE:-shvedov-migration-tools:1.0}" pgloader /home/migration/migration.load
+    "${MIGRATION_IMAGE:-shvedov-migration-tools:1.0}" pgloader --on-error-stop /home/migration/migration.load
   # v0.0.2 generator quotes the complete schema list as one identifier; normalize it.
   prod exec -T postgres psql -v ON_ERROR_STOP=1 -U mmuser -d mattermost -c 'ALTER ROLE mmuser SET search_path TO public;'
   docker run --rm --network shvedov_mm_net --platform "${PGLOADER_PLATFORM:-linux/amd64}" \
